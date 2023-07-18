@@ -1,0 +1,85 @@
+@import url(https://db.onlinewebfonts.com/c/6e788641559903409ac9e5abf317f9fa?family=Bogart+Semibold);
+@import url('https://fonts.cdnfonts.com/css/kenilla');
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+nav {
+  background-color: #00473E;
+  padding: 10px;
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hire-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#name p{ 
+  display: inline; 
+  color: #F2F7F5;
+  font-family: 'Bogart', sans-serif;
+  font-weight: bold;
+   font-size: 3.75em;
+   padding-left: 1em;
+}
+.hire-me{
+  color: #F2F7F5;
+  font-weight: bold;
+  font-family: 'Bogart', sans-serif;
+  font-size: 2em;
+  margin: 0;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.hire-image {
+  height: auto;
+  width: 10vw;
+  padding-top: 60px;
+}
+
+.popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 25vw;
+  padding: 15px;
+  background-color: #faae2b;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  font-size: 1.5vw;
+  font-weight:bold;
+  font-family: 'Kenilla', sans-serif;
+  text-align: center;
+}
+
+.hire-container:hover .popup {
+  display: block;
+}
+
+.popup p {
+  margin: 0;
+  color: #333;
+}
+
+.popup .close-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #00473E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup .close-button:hover {
+  background-color: #002F28;
+}
