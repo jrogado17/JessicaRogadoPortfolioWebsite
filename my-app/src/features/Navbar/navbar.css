@@ -10,10 +10,10 @@ body {
 nav {
   background-color: #00473E;
   padding: 10px;
-  height: 5.5vw;
+  height: 5vw;
   display: flex;
   justify-content: space-between;
-justify-self: center;
+  align-items: center;
 }
 
 .hire-container {
@@ -27,8 +27,8 @@ justify-self: center;
   font-family: 'Bogart', sans-serif;
   font-weight: bold;
   font-size: 4.75em;
-  padding-left: .5em;
-  transform: translate(0px, -50px);
+  padding-left: 0.5em;
+  /* transform: translate(0px, 25px); */
 }
 
 .hire-me {
@@ -84,4 +84,37 @@ justify-self: center;
 
 .popup .close-button:hover {
   background-color: #002F28;
+}
+
+/* Media Queries */
+
+@media (max-width: 940px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  #name p {
+    font-size: 2.5em;
+    transform: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .hire-me {
+    font-size: 1.5em;
+    padding-right: 1.5rem;
+  }
+
+  .hire-image {
+    max-width: 8vw;
+    padding-top: 40px;
+  }
+
+  .popup {
+    width: 40vw;
+    font-size: 1em;
+  }
 }
