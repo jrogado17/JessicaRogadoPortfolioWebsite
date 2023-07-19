@@ -26,11 +26,11 @@ const Slideshow = () => {
 
   const handleScroll = () => {
     const slideHeight = slideshowRef.current.clientHeight;
-    const scrollTop = window.scrollY;
-    const index = Math.floor(scrollTop / slideHeight) % slides.length; // Calculate the index with modulo operator
+    const scrollTop = window.scrollY + (slideHeight / 2); // Add half the slide height for more accurate calculation
+    const index = Math.floor(scrollTop / slideHeight) % slides.length;
     setCurrentSlide(index);
   };
-
+  
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
