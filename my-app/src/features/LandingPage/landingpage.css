@@ -4,7 +4,19 @@
    font-family: 'Bogart', sans-serif;
    font-weight: bold;
 }
-
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .hi, .explore {
+    animation: fadeIn 1s;
+  }
+  
 .hi{
     font-size: 6vw;
     margin-bottom: 0;
@@ -28,23 +40,18 @@
     font-size: 2em;
     transition: font-size 0.5s ease-in-out;
   }
-  
 
-  .wavy-text {
-    position: middle;
-    font-size: 1.75em;
-    animation: wave 2s linear infinite;
+@keyframes scaleIn {
+  from {
+      transform: translateX(-100%);
+    transform: scale(0);
   }
-  
-  @keyframes wave {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  to {
+    transform: scale(1);
   }
-  
+}
+
+.wavy-text {
+  animation: scaleIn 1s;
+  font-size: 2em;
+}
