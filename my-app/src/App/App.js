@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../features/Navbar/navbar";
 import AppRoutes from "./AppRoutes";
-import ScrollEffect from "../features/LandingPage/nameSection";
-import Slideshow from "../features/LandingPage/landingpage";
+import IntroText from "../features/LandingPage/nameSection";
+import SlideShow from '../features/LandingPage/landingpage'
 
 const App = () => {
   return (
     <div className="appContainer">
-      <Navbar />
-      <ScrollEffect />
-      <Slideshow />
+      <IntroText />
+      <SlideShow />
       <AppRoutes />
     </div>
   );
