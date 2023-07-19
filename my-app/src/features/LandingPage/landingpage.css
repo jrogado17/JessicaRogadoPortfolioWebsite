@@ -55,3 +55,19 @@
   animation: scaleIn 1s;
   font-size: 2em;
 }
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .slide-in {
+    animation: slideIn 0.5s forwards;
+    opacity: 0;
+  }
+  
