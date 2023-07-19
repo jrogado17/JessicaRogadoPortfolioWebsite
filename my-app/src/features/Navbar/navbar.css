@@ -1,5 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/6e788641559903409ac9e5abf317f9fa?family=Bogart+Semibold);
-@import url('https://fonts.cdnfonts.com/css/kenilla');
+@import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
 
 body {
   margin: 0;
@@ -31,7 +30,6 @@ nav {
   font-weight: bold;
   font-size: 4.75em;
   padding-left: 0.5em;
-  /* transform: translate(0px, 25px); */
 }
 
 .hire-me {
@@ -60,9 +58,9 @@ nav {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: none;
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: bold;
-  font-family: 'Kenilla', sans-serif;
+  font-family: "Bogart Medium";
   text-align: center;
 }
 

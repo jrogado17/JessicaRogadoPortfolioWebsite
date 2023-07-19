@@ -1,0 +1,50 @@
+#name-section p, .wavy-text{
+   color: #00473E;
+   text-align:center;
+   font-family: 'Bogart', sans-serif;
+   font-weight: bold;
+}
+
+.hi{
+    font-size: 6vw;
+    margin-bottom: 0;
+}
+
+.explore{
+    font-size: 2vw;
+    padding-bottom: 1.5vw;
+}
+
+.scroll-effect {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .scroll-effect.hidden {
+    opacity: 0;
+  }
+  
+  .scroll-effect.hidden .new-text {
+    font-size: 2em;
+    transition: font-size 0.5s ease-in-out;
+  }
+  
+
+  .wavy-text {
+    position: middle;
+    font-size: 1.75em;
+    animation: wave 2s linear infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
