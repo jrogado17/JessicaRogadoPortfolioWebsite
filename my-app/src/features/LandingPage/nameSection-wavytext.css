@@ -1,0 +1,73 @@
+#name-section p, .wavy-text{
+   color: #00473E;
+   text-align:center;
+   font-family: 'Bogart', sans-serif;
+   font-weight: bold;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .hi, .explore {
+    animation: fadeIn 1s;
+  }
+  
+.hi{
+    font-size: 6vw;
+    margin-bottom: 0;
+}
+
+.explore{
+    font-size: 2vw;
+    padding-bottom: 1.5vw;
+}
+
+.scroll-effect {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .scroll-effect.hidden {
+    opacity: 0;
+  }
+  
+  .scroll-effect.hidden .new-text {
+    font-size: 2em;
+    transition: font-size 0.5s ease-in-out;
+  }
+
+@keyframes scaleIn {
+  from {
+      transform: translateX(-100%);
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.wavy-text {
+  animation: scaleIn 1s;
+  font-size: 2em;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .slide-in {
+    animation: slideIn 0.5s forwards;
+    opacity: 0;
+  }
+  

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './landingpage.css'
+import './nameSection-wavytext.css'
 
 const IntroText = () => {
     return (
