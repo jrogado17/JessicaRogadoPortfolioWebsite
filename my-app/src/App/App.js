@@ -4,13 +4,12 @@ import AppRoutes from "./AppRoutes";
 import ScrollEffect from "../features/LandingPage/nameSection";
 import Slideshow from "../features/LandingPage/landingpage";
 
-
 const App = () => {
   return (
     <div className="appContainer">
       <Navbar />
       <ScrollEffect />
-      <Slideshow/>
+      <Slideshow />
       <AppRoutes />
     </div>
   );

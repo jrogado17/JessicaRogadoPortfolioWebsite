@@ -4,6 +4,8 @@ import './landingpage.css';
 const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideshowRef = useRef(null);
+  const slideHeightRef = useRef(0);
+  const sectionRefs = useRef([]);
 
   const slides = [
     {
@@ -24,13 +26,22 @@ const Slideshow = () => {
     },
   ];
 
+  useEffect(() => {
+    slideHeightRef.current = window.innerHeight;
+
+    // Set up sectionRefs to store the references to each section
+    sectionRefs.current = slides.map(() => React.createRef());
+  }, [slides]);
+
   const handleScroll = () => {
-    const slideHeight = slideshowRef.current.clientHeight;
-    const scrollTop = window.scrollY + (slideHeight / 2); // Add half the slide height for more accurate calculation
-    const index = Math.floor(scrollTop / slideHeight) % slides.length;
+    const scrollTop = window.scrollY;
+
+    // Calculate the current slide based on scroll position and slide height
+    const index = Math.floor(scrollTop / slideHeightRef.current);
+
     setCurrentSlide(index);
   };
-  
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -39,25 +50,31 @@ const Slideshow = () => {
   }, []);
 
   useEffect(() => {
-    const slideHeight = slideshowRef.current.clientHeight;
+    const slideHeight = slideHeightRef.current;
+    const targetScroll = currentSlide * slideHeight;
+
     window.scrollTo({
-      top: currentSlide * slideHeight,
+      top: targetScroll,
       behavior: 'smooth',
     });
   }, [currentSlide]);
 
   return (
-    <div className="slideshow" ref={slideshowRef}>
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slide ${currentSlide === index ? 'active' : ''}`}
-        >
-          <h2>{slide.title}</h2>
-          <p>{slide.content}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="slideshow" ref={slideshowRef}>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${currentSlide === index ? 'active' : ''}`}
+            ref={sectionRefs.current[index]}
+            style={{ height: `${slideHeightRef.current}px` }}
+          >
+            <h2>{slide.title}</h2>
+            <p>{slide.content}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
