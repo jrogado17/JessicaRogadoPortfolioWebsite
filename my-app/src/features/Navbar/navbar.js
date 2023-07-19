@@ -9,13 +9,22 @@ const Navbar = () => {
     setIsPopupVisible(!isPopupVisible);
   };
 
+  const handleOpenEmail = () => {
+    window.location.href = 'mailto:jrogado23@yahoo.com';
+  };
+
   return (
     <nav>
-        <div id='name'>
-            <p>Jessica Rogado</p>
-        </div>
-      <div className="hire-container" onMouseEnter={handleTogglePopup} onMouseLeave={handleTogglePopup}>
-      <img src={hireImg} alt="Hire Me" className="hire-image" />
+      <div id='name'>
+        <p>Jessica Rogado</p>
+      </div>
+      <div
+        className="hire-container"
+        onMouseEnter={handleTogglePopup}
+        onMouseLeave={handleTogglePopup}
+        onClick={handleOpenEmail}
+      >
+        <img src={hireImg} alt="Hire Me" className="hire-image" />
         <p className="hire-me">HIRE ME</p>
         {isPopupVisible && (
           <div className="popup">

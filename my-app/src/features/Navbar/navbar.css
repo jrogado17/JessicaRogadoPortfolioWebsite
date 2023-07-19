@@ -22,6 +22,9 @@ nav {
   position: relative;
 }
 
+.hire-me:hover{
+  color: #faae2b;
+}
 #name p {
   color: #F2F7F5;
   font-family: 'Bogart', sans-serif;
@@ -49,15 +52,15 @@ nav {
 
 .popup {
   position: absolute;
-  top: 100%;
+  top: 80%;
   right: 0;
-  width: 25vw;
+  width: 20vw;
   padding: 15px;
   background-color: #faae2b;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: none;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: bold;
   font-family: 'Kenilla', sans-serif;
   text-align: center;
