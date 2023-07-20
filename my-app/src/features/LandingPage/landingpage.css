@@ -91,6 +91,19 @@ body {
     position: absolute;
     margin-left: 20vw;
 }
+
+.skill-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
+}
+#skills{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+}
 /* Media Queries */
 
 @media (max-width: 940px) {
@@ -110,6 +123,7 @@ body {
     font-size: 2em;
   }
 }
+
 .section-divider {
     height: 85%;
     width: .5%;
