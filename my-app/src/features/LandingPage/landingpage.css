@@ -1,55 +1,89 @@
-.landing-page {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:6vw;
-  }
-  
+/* landingpage.css */
+
+@import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top:6vw;
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00473E;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: #F2F7F5;
+  font-weight: bold;
+  font-family: 'Bogart', sans-serif;
+  font-size: 2em;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.05s ease;
+}
+
+.nav-link.active {
+  color: #faae2b;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.section-title {
+  color: #00473E;
+  font-size: 1em; /* Set the initial font size to be small */
+  font-family: 'Bogart', sans-serif;
+  transform: scale(0.8); /* Initially scale down to create the effect of small text */
+  transition: font-size 0.3s ease, transform 0.3s ease; /* Add transition for font size and scale effect */
+}
+
+.section.active .section-title {
+  font-size: 2.5em; /* When section is active, set font size to the desired large size */
+  transform: scale(1); /* When section is active, set transform to 1 for enlarging effect */
+}
+
+/* Media Queries */
+
+@media (max-width: 940px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 1;
-  }
-  
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-  }
-  
-  .navbar li {
-    margin: 0 20px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #333333;
-    font-weight: bold;
-  }
-  
-  .section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    height: auto;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    background-color: #f2f2f2;
-    opacity: 0.7;
-    transition: opacity 0.5s ease;
+    align-items: flex-start;
+    padding-bottom: 20px;
   }
-  
-  .section.active {
-    opacity: 1;
+
+  .nav-link {
+    font-size: 1.5em;
+    margin: 0.5rem 0;
   }
-  #name-section{
-    margin-top:6vw;
+
+  .section-title {
+    font-size: 2em;
   }
+}
