@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
 import './landingpage.css';
 import Navbar from '../Navbar/navbar';
-import divider from '../images/divider.png'
+import divider from '../images/divider.png';
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -64,14 +63,14 @@ const LandingPage = () => {
       </section>
       <section id="about-me" className="section">
         <h2>About Me</h2>
-        <img src={divider} alt="arrow" className="divider" /> 
+        <img src={divider} alt="arrow" className="divider" />
         <p>
-          A  tech enthusiast and software developer with a solid foundation in mechanical engineering and physics, <br/>
-          I've transitioned my career toward full-stack development, <br/> 
+          A tech enthusiast and software developer with a solid foundation in mechanical engineering and physics, <br />
+          I've transitioned my career toward full-stack development, <br />
           combining my love for technology with a knack for problem-solving.
-        <br/>
-        <br/>
-        <br/>Based in Long Beach, CA
+          <br />
+          <br />
+          <br />Based in Long Beach, CA
         </p>
       </section>
 
@@ -89,50 +88,6 @@ const LandingPage = () => {
         <h2>Education</h2>
         {/* Your education content goes here */}
       </section>
-
-      {/* Nav Links */}
-      <div className="nav-links">
-        <Link
-          activeClass="active"
-          to="about-me"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          About Me
-        </Link>
-        <Link
-          activeClass="active"
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Skills
-        </Link>
-        <Link
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Projects
-        </Link>
-        <Link
-          activeClass="active"
-          to="education"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Education
-        </Link>
-      </div>
     </div>
   );
 };
