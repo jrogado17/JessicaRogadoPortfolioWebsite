@@ -6,8 +6,12 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  margin-top:6vw;
+  margin-top: 6vw;
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+.landing-page {
+  overflow-y: scroll; /* Add overflow-y: scroll to enable vertical scrolling inside the landing page */
 }
 
 .navbar {
@@ -39,7 +43,7 @@ body {
   font-size: 2em;
   margin: 0 1rem;
   cursor: pointer;
-  transition: color 0.05s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-link.active {
@@ -47,27 +51,46 @@ body {
 }
 
 .section {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
-  text-align: center;
+  scroll-snap-align: start;
+  overflow: hidden; /* Hide any content that overflows the section */
 }
 
-.section-title {
+.section h2 {
   color: #00473E;
-  font-size: 1em; /* Set the initial font size to be small */
   font-family: 'Bogart', sans-serif;
-  transform: scale(0.8); /* Initially scale down to create the effect of small text */
-  transition: font-size 0.3s ease, transform 0.3s ease; /* Add transition for font size and scale effect */
+  font-size:5vw;
+}
+#blank{
+    height: 30vh;
+}
+#about-me {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.section.active .section-title {
-  font-size: 2.5em; /* When section is active, set font size to the desired large size */
-  transform: scale(1); /* When section is active, set transform to 1 for enlarging effect */
+#about-me p{
+    color: #475D5B;
+    font-family: Bogart;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    width: 20em;
+    height: 146px;
+    flex-shrink: 0;
+    margin-bottom:7vw;
 }
 
+.arrow-image {
+    height:70vh;
+    width:auto;
+    margin-left: 65px;
+}
 /* Media Queries */
 
 @media (max-width: 940px) {
@@ -83,7 +106,16 @@ body {
     margin: 0.5rem 0;
   }
 
-  .section-title {
+  .section h2 {
     font-size: 2em;
   }
 }
+.section-divider {
+    height: 85%;
+    width: .5%;
+    background-color: #00332c;
+    margin: 0;
+    margin-left:110px;
+  }
+  
+/* Add more media queries as needed */
