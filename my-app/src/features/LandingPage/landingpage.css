@@ -76,20 +76,20 @@ body {
 #about-me p{
     color: #475D5B;
     font-family: Bogart;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-style: normal;
     font-weight: 450;
     line-height: normal;
     width: 20em;
     height: 146px;
     flex-shrink: 0;
-    margin-bottom:7vw;
+    margin-bottom:8vw;
 }
 
-.arrow-image {
-    height:70vh;
-    width:auto;
-    margin-left: 65px;
+.divider{
+    display:inline;
+    position: absolute;
+    margin-left: 20vw;
 }
 /* Media Queries */
 

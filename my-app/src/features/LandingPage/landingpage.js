@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import './landingpage.css';
 import Navbar from '../Navbar/navbar';
-import arrow from '../images/arrow.png'
+import divider from '../images/divider.png'
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -60,11 +60,11 @@ const LandingPage = () => {
     <div className="landing-page">
       <Navbar currentSection={activeSection} onSectionClick={handleSectionClick} />
       <section id="blank" className="section">
-        <img src={arrow} alt="arrow" className="arrow-image" />
+        {/* <img src={arrow} alt="arrow" className="arrow-image" /> */}
       </section>
       <section id="about-me" className="section">
         <h2>About Me</h2>
-        <div className="section-divider"></div>
+        <img src={divider} alt="arrow" className="divider" /> 
         <p>
           A  tech enthusiast and software developer with a solid foundation in mechanical engineering and physics, <br/>
           I've transitioned my career toward full-stack development, <br/> 
