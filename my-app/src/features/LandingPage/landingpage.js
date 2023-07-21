@@ -18,6 +18,8 @@ import matlabImage from '../images/matlab.png';
 import simulinkImage from '../images/simulink.png';
 import solidworksImage from '../images/solidworks.png';
 import underline from '../images/underlin.png';
+import freebodyLogo from '../images/freebody.png'; // Add the Free Body image
+import filler from '../images/fill.png';
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -66,7 +68,7 @@ const LandingPage = () => {
     <div className="landing-page">
       <Navbar currentSection={activeSection} />
       <section id="blank" className="section">
-        {/* <img src={arrow} alt="arrow" className="arrow-image" /> */}
+        {/* <img src={filler} alt="sprial" className="filler" /> */}
       </section>
       <section id="about-me" className="section">
         <h2>About Me</h2>
@@ -93,7 +95,6 @@ const LandingPage = () => {
           <SkillCard imageSrc={reactImage} text="React" />
           <SkillCard imageSrc={reduxImage} text="Redux" />
           <SkillCard imageSrc={gitImage} text="Git" />
-          {/* New Skills */}
           <SkillCard imageSrc={mathematicaImage} text="Mathematica" />
           <SkillCard imageSrc={matlabImage} text="Matlab" />
           <SkillCard imageSrc={simulinkImage} text="Simulink" />
@@ -103,7 +104,21 @@ const LandingPage = () => {
 
       <section id="projects" className="section">
         <h2>Projects</h2>
-        {/* Your projects content goes here */}
+        <img src={divider} alt="arrow" className="divider" /> 
+        <div className="project-description">
+          <img src={freebodyLogo} alt="Free Body" className="free-body-image" />
+          <p>
+            Here's a description of the Free Body project. You can provide details about what the project is about, the technologies used, and any other relevant information.
+            <br/>
+            <br/>
+            <p id='FBlinks'>Check it out 
+            <div id='links'>
+              <a href="https://free-body.onrender.com" target="_blank" id='freebodylink' rel="noopener noreferrer">Website</a>
+              <a href="https://github.com/Free-Body/free-body" target="_blank" id='freebodylink' rel="noopener noreferrer">Github</a>
+              </div>
+            </p>
+            </p>
+        </div>
       </section>
 
       <section id="education" className="section">

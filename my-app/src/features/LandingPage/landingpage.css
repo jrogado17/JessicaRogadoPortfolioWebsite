@@ -1,5 +1,5 @@
 /* landingpage.css */
-
+@import url('https://fonts.cdnfonts.com/css/borsok');
 @import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
 
 body {
@@ -58,59 +58,134 @@ body {
   scroll-snap-align: start;
   overflow: hidden; /* Hide any content that overflows the section */
 }
-
+#freebodylink{
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #faae2b;
+}
+.project-description a {
+  color: #faae2b; /* Set the link color */
+  text-decoration: underline; /* Add an underline to the link */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  margin: 4px; /* Add some space between the links */
+}
 .section h2 {
   color: #00473E;
   font-family: 'Bogart', sans-serif;
-  font-size:5vw;
+  font-size: 5vw;
 }
-#blank{
-    height: 30vh;
-}
-#about-me {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-#about-me p{
-    color: #475D5B;
-    font-family: Bogart;
-    font-size: 1.75vw;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    width: 20em;
-    height: 146px;
-    flex-shrink: 0;
-    margin-bottom:8vw;
+#FBlinks {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  margin-left:0;
 }
 
-.divider{
-    display:inline;
-    position: absolute;
-    margin-left: 20vw;
+#FBlinks a{
+  color: #f5f5f5;
+  background: #00473E;
+  padding: 20px 20px; 
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bogart', sans-serif;
+  font-weight: bold;
+  border-radius:3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: table;
+  justify-content:center;
+  align-items: left;
+  text-align: center;
+  margin-top: 1em;
+}
+#FBlinks a:hover{
+  background: #00897B
+}
+#links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.underline{
-  display:inline;
+#blank {
+  height: 30vh;
+}
+
+#about-me,
+#projects {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#about-me p,
+#projects p {
+  color: #475D5B;
+  font-family: Bogart;
+  font-size: 1.75vw;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  width: 20em;
+  flex-shrink: 0;
+  display: inline;
+  margin-top: 6vw;
+}
+
+#projects p {
+  width: 25vw;
+}
+#projects p {
+  width: 25vw;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  margin-left:10vw;
+}
+.project-description img {
+  width:20vw;
+}
+.project-description p {
+  margin-left: 20px;
+}
+
+.project-description a:hover {
+  color: #f26c0d; /* Change the link color on hover */
+}
+.divider {
+  display: inline;
+  position: absolute;
+  margin-left: 20vw;
+}
+
+.underline {
+  display: inline;
   position: absolute;
   padding-bottom: 20em;
   padding-left: 12em;
-  border-radius:1000em;
+  border-radius: 1000em;
 }
-.skill-cards{
+
+.skill-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 90vw;
   justify-content: center;
 }
-#skills{
+
+#skills {
   display: flex;
   flex-direction: column;
-  height:auto;
+  height: auto;
 }
+
 /* Media Queries */
 
 @media (max-width: 940px) {
@@ -132,11 +207,9 @@ body {
 }
 
 .section-divider {
-    height: 85%;
-    width: .5%;
-    background-color: #00332c;
-    margin: 0;
-    margin-left:110px;
-  }
-  
-/* Add more media queries as needed */
+  height: 85%;
+  width: .5%;
+  background-color: #00332c;
+  margin: 0;
+  margin-left: 110px;
+}
