@@ -51,12 +51,11 @@ body {
 }
 
 .section {
-  height: 50vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
   scroll-snap-align: start;
-  overflow: hidden; /* Hide any content that overflows the section */
 }
 #freebodylink{
   text-decoration: none;
@@ -109,7 +108,7 @@ body {
 #links{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #blank {
@@ -120,7 +119,7 @@ body {
 #projects {
   display: flex;
   justify-content: flex-start; 
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .align{
@@ -212,10 +211,6 @@ body {
     margin: 0.5rem 0;
   }
 
-  .section h2 {
-    font-size: 2em;
-    
-  }
 }
 
 .section-divider {
@@ -227,8 +222,17 @@ body {
 }
 
 .underline, .divider{
-  max-width: 100%;
+  max-width: 70vw;
   height: auto;
 }
 
-
+.section-heading::first-letter {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the first letter bold if desired */
+  vertical-align: initial;
+}
+/* @media (max-width: 1070px) {
+  .section h2 {
+    font-size: 3;
+  }
+} */
