@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import hireImg from '../images/hireMe.png';
-import logo from '../images/Logo.png'
+import logo from '../images/Logo.png';
 import { Link } from 'react-scroll';
-
 
 const Navbar = ({ currentSection, onSectionClick }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleTogglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
@@ -16,14 +16,27 @@ const Navbar = ({ currentSection, onSectionClick }) => {
     window.location.href = 'mailto:jrogado23@yahoo.com';
   };
 
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const handleLinkClick = (section) => {
     onSectionClick(section);
     setIsPopupVisible(false); // Close the popup when a link is clicked
+    setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
   return (
     <nav>
-      <ul className="nav-links">
+      <div
+        className={`hamburger-icon ${isMenuOpen ? 'open' : ''}`}
+        onClick={handleToggleMenu}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <li className={`nav-link ${currentSection === 'about-me' ? 'active' : ''}`}>
           <Link
             to="about-me"
@@ -80,7 +93,7 @@ const Navbar = ({ currentSection, onSectionClick }) => {
         onClick={handleOpenEmail}
       >
         <img src={hireImg} alt="Hire Me" className="hire-image" />
-        <button className="hire-me">HIRE ME</button>
+        <button className="hire-me">CONTACT ME</button>
         {isPopupVisible && (
           <div className="popup">
             <p>

@@ -54,7 +54,7 @@ body {
   height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   scroll-snap-align: start;
   overflow: hidden; /* Hide any content that overflows the section */
 }
@@ -74,6 +74,7 @@ body {
   color: #00473E;
   font-family: 'Bogart', sans-serif;
   font-size: 5vw;
+
 }
 #FBlinks {
   justify-content: center;
@@ -118,7 +119,14 @@ body {
 #about-me,
 #projects {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
+  justify-content: space-evenly;
+}
+
+.align{
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: flex-start; /* Align items to the start */
   justify-content: space-evenly;
 }
 
@@ -171,7 +179,10 @@ body {
   padding-left: 12em;
   border-radius: 1000em;
 }
-
+.project-description{
+  display: flex;
+  
+}
 .skill-cards {
   display: flex;
   flex-direction: row;
@@ -203,6 +214,7 @@ body {
 
   .section h2 {
     font-size: 2em;
+    
   }
 }
 
@@ -213,3 +225,10 @@ body {
   margin: 0;
   margin-left: 110px;
 }
+
+.underline, .divider{
+  max-width: 100%;
+  height: auto;
+}
+
+

@@ -175,3 +175,63 @@ button.hire-me.jumping {
     font-size: 1em;
   }
 }
+
+
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #F2F7F5;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburger-icon.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 940px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #00473E;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    color: #F2F7F5;
+    font-weight: bold;
+    font-family: 'Bogart', sans-serif;
+    font-size: 2em;
+    margin: 1rem 0;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .nav-link.active {
+    color: #faae2b;
+  }
+}
