@@ -10,8 +10,8 @@ const Projects = () => {
       <h2 className="section-head">Projects</h2>
       <img src={underline} alt="swiggly underline" className="underline-divider2" />
       <div className="project-description">
+      <h3 id='project-title'>Free Body</h3>
         <img src={freebodyLogo} alt="Free Body" className="free-body-image" />
-        <h3 id='project-title'>Free Body</h3>
         <p>
           Here's a description of the Free Body project. You can provide details about what the project is about, the technologies used, and any other relevant information.
           <br />

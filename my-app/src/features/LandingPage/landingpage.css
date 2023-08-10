@@ -61,7 +61,7 @@ body {
 }
 .project-description a {
   color: #faae2b; /* Set the link color */
-  text-decoration: underline; /* Add an underline to the link */
+  text-decoration: none; /* Add an underline to the link */
   transition: color 0.3s ease; /* Add a smooth color transition on hover */
   margin: 4px; /* Add some space between the links */
 }
@@ -99,7 +99,8 @@ body {
   margin-top: 1em;
 }
 #FBlinks a:hover{
-  background: #00897B
+  background: #ffa8ba;
+  color:#00332c
 }
 #links{
   display: flex;
@@ -146,9 +147,10 @@ body {
   margin-top: 3vw;
 }
 .project-description h3{
-  margin:0;
-  font-size: 3vw;
-  color: #faae2b; 
+  margin: 1vw;
+  font-size: 4vw;
+  font-weight: 800;
+  color: #f9bc60; 
   font-family: 'Bogart', sans-serif;
 }
 .project-description img {
@@ -158,9 +160,6 @@ body {
   margin-left: 20px;
 }
 
-.project-description a:hover {
-  color: #f26c0d; /* Change the link color on hover */
-}
 .divider {
   display: inline;
   position: absolute;
@@ -237,6 +236,25 @@ body {
 }
 
 .underline-divider2{
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#about-me p:nth-child(4) {
+  color:#f9bc60;
+  margin:2vw;
+  font-weight: 800;
+}
+
+.underline-divider3{
   margin-bottom: 30vw;
   position:absolute;
   margin:0;
