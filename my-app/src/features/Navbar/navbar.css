@@ -124,7 +124,7 @@ button.hire-me {
 }
 
 button.hire-me:hover {
-  background: #ffa8ba;
+  background: #d8779a;
 }
 
 button.hire-me.jumping {
@@ -232,6 +232,6 @@ button.hire-me.jumping {
   }
 
   .nav-link.active {
-    color: #faae2b;
+    color: #d8779a;
   }
 }

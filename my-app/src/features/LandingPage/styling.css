@@ -2,30 +2,38 @@
   display: flex;
   justify-content: space-around; 
   align-items: center; 
-  flex-wrap: wrap; 
   margin-top: 5vw;
+
 }
 
   
   .school {
-    text-align: center;
     margin: 4vw;
+    align-items: center; /* Center align the content horizontally */
+    text-align: center;
+    align-self: baseline;
   }
-  
+  .school-image-container {
+    display: flex;
+    justify-content: center; /* Center the school image horizontally */
+  }
   .school-image {
     max-width: 250vw;
-    margin-bottom: 10px;
-    display: inline;
+    margin-bottom: 20px;
+    display: block; /* Change to display block to remove extra space */
+    margin: 0 auto; /* Center the image horizontally */
   }
   
+  .school-image:last-child {
+
+  }
   .school-name {
-    color:#f9bc60;
+    color:#d8779a;
     font-weight: 800;
     margin: 1vw;
-    font-size: 3vw;
+    font-size: 2.2vw;
     font-weight: 800;
-    color: #f9bc60; 
-    font-family: 'Bogart', sans-serif;
+    font-family: 'Bogart', sans-serif; 
   }
 
   .section-heading{
@@ -87,4 +95,6 @@
 
   #education-description:last-child{
     font-weight: 450;
+    text-align: center;
   }
+

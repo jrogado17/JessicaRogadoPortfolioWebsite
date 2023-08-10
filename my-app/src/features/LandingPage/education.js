@@ -14,6 +14,7 @@ const Education = () => {
           <img src={GraceHopper} alt="Grace Hopper" className="school-image" />
           <p className="school-name">Grace Hopper Fullstack Academy</p>
           <p id='education-description'>Certification of Completion</p>
+          <br></br>
           <p id='education-description'>July 2023</p>
         </div>
         <div className="school">

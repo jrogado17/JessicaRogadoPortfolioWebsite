@@ -148,12 +148,12 @@ body {
 }
 .project-description h3{
   margin: 1vw;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 800;
-  color: #f9bc60; 
+  color: #d8779a; 
   font-family: 'Bogart', sans-serif;
 }
-.project-description img {
+.FBLogo {
   width:20vw;
 }
 .project-description p {
@@ -249,7 +249,7 @@ body {
 }
 
 #about-me p:nth-child(4) {
-  color:#f9bc60;
+  color:#d8779a;
   margin:2vw;
   font-weight: 800;
 }
@@ -265,4 +265,9 @@ body {
   left: 0;
   width: 100%;
   height: auto;
+}
+
+.GHLogo{
+  width:50vw;
+  transform: translate(0px, -8vw);
 }
