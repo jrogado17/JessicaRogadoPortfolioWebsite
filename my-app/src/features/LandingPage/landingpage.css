@@ -165,7 +165,8 @@ body {
 .divider {
   display: inline;
   position: absolute;
-  margin-left: 20vw;
+  margin: 0;
+  padding: 0;
 }
 
 .project-description{
@@ -178,6 +179,7 @@ body {
   flex-wrap: wrap;
   width: 90vw;
   justify-content: center;
+  padding: 4vw;
 }
 
 #skills {
@@ -222,3 +224,5 @@ body {
     font-size: 3;
   }
 } */
+
+

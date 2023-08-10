@@ -14,12 +14,14 @@
     margin-bottom: 10px;
   }
   
-  .underline {
+  
+  /* .underline-divider {
     width: 50px;
     height: 4px;
     display: block;
     margin: 0 auto;
-  }
+    position: absolute;
+  } */
   
   .schools {
     display: flex;
@@ -40,28 +42,44 @@
   .school-name {
     font-size: 18px;
   }
-  .underline{
-
-  }
-  #about-me img {
+  /* #about-me img {
     margin:0;
     padding:0;
-  }
-/* 
-  .title img{
-    position:absolute;
-  }
-  .underline {
-    padding:0;
-  }
-  .underline {
-    display: inline;
-    position: absolute;
-    padding-bottom: 20em;
-    padding-left: 12em;
-    border-radius: 1000em;
-  }
-  .underline, .divider{
-    max-width: 70vw;
-    height: auto;
   } */
+  .section-heading{
+    text-align: center;
+  }
+
+
+
+  /* skills */
+  .section {
+    text-align: center;
+    position: relative; /* Set the section as a positioning context */
+  }
+  
+  
+  .section-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+
+  .underline-divider {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13vw;
+  }
+  
+  .section-header::first-letter {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: inherit;
+  }
+
+
+  

@@ -7,10 +7,11 @@ import freebodyLogo from '../images/freebody.png';
 const Projects = () => {
   return (
     <section id="projects" className="section">
-      <h2 className="section-heading">Projects</h2>
-      <img src={divider} alt="swiggly line" className="divider" />
+      <h2 className="section-head">Projects</h2>
+      <img src={divider} alt="side swiggly line" className="divider" />
       <div className="project-description">
         <img src={freebodyLogo} alt="Free Body" className="free-body-image" />
+        <h3 id='project-title'>Free Body</h3>
         <p>
           Here's a description of the Free Body project. You can provide details about what the project is about, the technologies used, and any other relevant information.
           <br />

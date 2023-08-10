@@ -13,14 +13,13 @@ import mathematicaImage from '../images/mathematica.png';
 import matlabImage from '../images/matlab.png';
 import simulinkImage from '../images/simulink.png';
 import solidworksImage from '../images/solidworks.png';
+import './styling.css'
 
 const Skills = () => {
   return (
     <section id="skills" className="section">
-        <section className='title'>
             <h2 className="section-heading">Skills</h2>
-            <img src={underline} alt="arrow" className="underline" />
-        </section>
+            <img src={underline} alt="swiggly underline" className="underline-divider" />
       <div className="skill-cards">
         <SkillCard imageSrc={jsImage} text="JavaScript" />
         <SkillCard imageSrc={htmlImage} text="HTML" />

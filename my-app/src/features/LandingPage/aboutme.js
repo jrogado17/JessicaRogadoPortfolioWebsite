@@ -4,8 +4,8 @@ import divider from '../images/divider.png';
 const AboutMe = () => {
   return (
     <section id="about-me" className="section">
-      <h2 className="section-heading">About Me</h2>
-      <img src={divider} alt="swiggly line" className="divider" />
+      <h2 className="section-header">About Me</h2>
+      <img src={divider} alt="side swiggly line" className="divider" />
       <p>
         A tech enthusiast and software developer with a solid foundation in mechanical engineering and physics,
         <br />
