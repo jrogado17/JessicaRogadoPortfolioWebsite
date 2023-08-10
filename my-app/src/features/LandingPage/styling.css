@@ -1,0 +1,41 @@
+.education-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .title {
+    text-align: center;
+    
+  }
+  
+  .section-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .schools {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .school {
+    text-align: center;
+  }
+  
+  .school-image {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .school-name {
+    font-size: 18px;
+  }
+  

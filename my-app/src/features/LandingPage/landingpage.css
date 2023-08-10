@@ -10,9 +10,6 @@ body {
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
 }
 
-.landing-page {
-  overflow-y: scroll; /* Add overflow-y: scroll to enable vertical scrolling inside the landing page */
-}
 
 .navbar {
   position: fixed;
