@@ -1,14 +1,14 @@
 // Projects.js
 
 import React from 'react';
-import divider from '../images/divider.png';
+import underline from '../images/underlin.png';
 import freebodyLogo from '../images/freebody.png';
 
 const Projects = () => {
   return (
     <section id="projects" className="section">
       <h2 className="section-head">Projects</h2>
-      <img src={divider} alt="side swiggly line" className="divider" />
+      <img src={underline} alt="swiggly underline" className="underline-divider2" />
       <div className="project-description">
         <img src={freebodyLogo} alt="Free Body" className="free-body-image" />
         <h3 id='project-title'>Free Body</h3>

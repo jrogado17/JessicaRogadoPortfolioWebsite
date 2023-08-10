@@ -48,7 +48,6 @@ body {
 }
 
 .section {
-  height: 100vw;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -112,12 +111,7 @@ body {
   height: 30vh;
 }
 
-#about-me,
-#projects {
-  display: flex;
-  justify-content: flex-start; 
-  justify-content: space-around;
-}
+
 
 .align{
   display: flex;
@@ -134,23 +128,28 @@ body {
   font-style: normal;
   font-weight: 450;
   line-height: normal;
-  width: 20em;
+  width:30vw;
   flex-shrink: 0;
   display: inline;
   margin-top: 6vw;
 }
 
 #projects p {
-  width: 25vw;
-}
-#projects p {
-  width: 25vw;
+  width: 30vw;
+  margin:0;
 }
 
 .project-description {
   display: flex;
+  flex-flow: column;
   align-items: center;
-  margin-left:10vw;
+  margin-top: 3vw;
+}
+.project-description h3{
+  margin:0;
+  font-size: 3vw;
+  color: #faae2b; 
+  font-family: 'Bogart', sans-serif;
 }
 .project-description img {
   width:20vw;
@@ -169,10 +168,7 @@ body {
   padding: 0;
 }
 
-.project-description{
-  display: flex;
-  
-}
+
 .skill-cards {
   display: flex;
   flex-direction: row;
@@ -226,3 +222,29 @@ body {
 } */
 
 
+
+.underline-divider1 {
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.underline-divider2{
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import divider from '../images/divider.png';
+import underline from '../images/underlin.png';
 
 const AboutMe = () => {
   return (
     <section id="about-me" className="section">
       <h2 className="section-header">About Me</h2>
-      <img src={divider} alt="side swiggly line" className="divider" />
+      <img src={underline} alt="swiggly underline" className="underline-divider1" />
       <p>
         A tech enthusiast and software developer with a solid foundation in mechanical engineering and physics,
         <br />
