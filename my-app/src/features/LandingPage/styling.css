@@ -3,9 +3,10 @@
     background-color: #f4f4f4;
   }
   
-  .title {
+  .education-title {
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
   }
   
   .section-heading {
@@ -33,9 +34,34 @@
   .school-image {
     max-width: 100px;
     margin-bottom: 10px;
+    display: inline;
   }
   
   .school-name {
     font-size: 18px;
   }
-  
+  .underline{
+
+  }
+  #about-me img {
+    margin:0;
+    padding:0;
+  }
+/* 
+  .title img{
+    position:absolute;
+  }
+  .underline {
+    padding:0;
+  }
+  .underline {
+    display: inline;
+    position: absolute;
+    padding-bottom: 20em;
+    padding-left: 12em;
+    border-radius: 1000em;
+  }
+  .underline, .divider{
+    max-width: 70vw;
+    height: auto;
+  } */

@@ -17,10 +17,10 @@ import solidworksImage from '../images/solidworks.png';
 const Skills = () => {
   return (
     <section id="skills" className="section">
-        <div className='title'>
+        <section className='title'>
             <h2 className="section-heading">Skills</h2>
             <img src={underline} alt="arrow" className="underline" />
-        </div>
+        </section>
       <div className="skill-cards">
         <SkillCard imageSrc={jsImage} text="JavaScript" />
         <SkillCard imageSrc={htmlImage} text="HTML" />
