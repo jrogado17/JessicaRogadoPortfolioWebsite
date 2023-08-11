@@ -44,7 +44,7 @@ nav {
 }
 
 .hire-me {
-  color: #F2F7F5;
+  color: #d8779a;
   font-weight: bold;
   font-family: 'Bogart', sans-serif;
   font-size: 2em;
@@ -96,6 +96,7 @@ nav {
 
 .popup .close-button:hover {
   background-color: #002F28;
+  color: #F2F7F5;
 }
 
 .nav-link {
@@ -124,7 +125,8 @@ button.hire-me {
 }
 
 button.hire-me:hover {
-  background: #d8779a;
+  background: #faae2b;
+  color: #00473e;
 }
 
 button.hire-me.jumping {

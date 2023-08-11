@@ -99,8 +99,8 @@ body {
   margin-top: 1em;
 }
 #FBlinks a:hover{
-  background: #ffa8ba;
-  color:#00332c
+  background: #faae2b;
+  color: #00473e;
 }
 #links{
   display: flex;
@@ -150,7 +150,7 @@ body {
   margin: 1vw;
   font-size: 3vw;
   font-weight: 800;
-  color: #d8779a; 
+  color: #475d5b; 
   font-family: 'Bogart', sans-serif;
 }
 .FBLogo {
@@ -249,7 +249,7 @@ body {
 }
 
 #about-me p:nth-child(4) {
-  color:#d8779a;
+  color:#475d5b;
   margin:2vw;
   font-weight: 800;
 }
