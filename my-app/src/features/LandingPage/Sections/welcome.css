@@ -1,0 +1,7 @@
+.WelcomeSection{
+    display: flex;
+    flex-direction: column;
+}
+#welcomeText{
+    
+}
