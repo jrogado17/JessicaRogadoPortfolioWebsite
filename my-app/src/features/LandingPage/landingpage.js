@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './landingpage.css';
 import Navbar from '../Navbar/navbar';
-import Projects from './projects'; // Import the Projects component
-import Skills from './skills'; // Import the Skills component
-import Education from './education'; // Import the Education component
-import AboutMe from './aboutme'; // Import the AboutMe component
+import Welcome from './Sections/welcome';
 
 
 const LandingPage = () => {
@@ -12,10 +9,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <Navbar currentSection={activeSection} />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Education />
+      <Welcome />
     </div>
   );
 };

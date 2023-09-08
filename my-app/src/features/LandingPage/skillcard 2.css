@@ -1,0 +1,54 @@
+/* slide.css */
+
+/* Add a container for the skill cards with horizontal list */
+.skill-cards-container {
+    display: flex;
+    /* flex-wrap: wrap; Make sure the skill cards wrap to the next line if there's not enough space */
+    justify-content: center; /* Center the skill cards horizontally */
+    width: 100%; /* Set a fixed width for the container */
+    margin-top: 16px; /* Add some space between Skills section and the skill cards */
+    margin-bottom: 32px; /* Add some space at the bottom */
+    padding: 16px 0; /* Add some padding to the container */
+    
+  }
+  
+  /* Style the individual skill cards */
+  .skill-card {
+    min-width: 200px; /* Set the minimum width of the skill card */
+    flex: 0 0 auto; /* Prevent the skill cards from shrinking */
+    padding: 16px; /* Add some padding around the card */
+    margin: 16px; /* Add some margin between the cards */
+    text-align: center; /* Center the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  
+  /* Style the image inside the skill card */
+  .skill-card img {
+    width: auto; /* Set the width of the image */
+    height: 80px; /* Set the height of the image */
+    object-fit: cover; /* Make sure the image retains its aspect ratio and covers the entire space */
+    margin-bottom: 16px; /* Add some margin below the image */
+  }
+  
+  /* Style the text inside the skill card */
+  .skill-card p {
+    font-size: 16px; /* Set the font size of the text */
+    color: #333; /* Set the text color */
+  }
+  
+  /* Add some space between the skill card title and the text */
+  .skill-card h3 {
+    /* You can add any styles for the title here */
+  }
+  
+  /* Optional: Hide the scrollbar */
+  .skill-cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .skill-card p{
+    font-family: Bogart;
+    font-size: 1.5vw;
+    font-weight: 450;
+  }

@@ -1,0 +1,100 @@
+.schools {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  margin-top: 5vw;
+
+}
+
+  
+  .school {
+    margin: 4vw;
+    align-items: center; /* Center align the content horizontally */
+    text-align: center;
+    align-self: baseline;
+  }
+  .school-image-container {
+    display: flex;
+    justify-content: center; /* Center the school image horizontally */
+  }
+  .school-image {
+    max-width: 250vw;
+    margin-bottom: 20px;
+    display: block; /* Change to display block to remove extra space */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  .school-image:last-child {
+
+  }
+  .school-name {
+    color:#d8779a;
+    font-weight: 800;
+    margin: 1vw;
+    font-size: 2.2vw;
+    font-weight: 800;
+    font-family: 'Bogart', sans-serif; 
+  }
+
+  .section-heading{
+    text-align: center;
+  }
+
+
+
+  /* skills */
+  .section {
+    text-align: center;
+    position: relative; /* Set the section as a positioning context */
+  }
+  
+  
+  .section-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+
+  .underline-divider {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13vw;
+  }
+  
+  .section-header::first-letter {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: inherit;
+  }
+
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+#education-description{
+    color: #475D5B;
+    font-family: Bogart;
+    font-size: 1.75vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+    display: inline;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+    text-align: center;
+  }
+
+  #education-description:last-child{
+    font-weight: 450;
+    text-align: center;
+  }
+
