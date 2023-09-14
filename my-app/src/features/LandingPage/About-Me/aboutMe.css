@@ -1,0 +1,14 @@
+.about-me {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .picture {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Add some spacing between picture and text */
+  }
+  
+  .about-me-text {
+    flex: 2; /* Take up available space */
+  }
+  
