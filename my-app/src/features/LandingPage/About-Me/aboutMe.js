@@ -9,7 +9,7 @@ const AboutMe = () => {
           <img src={picture} alt="About Me" />
         </div>
         <div className="about-me-text">
-          <h2>Introduction</h2>
+          <h2 id='Introduction'>Introduction</h2>
           <p>
             I'm Jess, a Software Engineer with a passion for creating innovative software solutions.
             I specialize in full-stack development with an interest in machine learning and UX/UI.
