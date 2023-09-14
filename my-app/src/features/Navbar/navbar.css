@@ -1,9 +1,18 @@
 @import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
-
+@font-face {
+  font-family: 'Lucky Bones';
+  src: url('../fonts/Luckybones-Bold.ttf') format('truetype'); 
+}
 body {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -20,220 +29,32 @@ nav {
   z-index: 999;
 }
 
-.nav-links {
+.social-links {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-}
-
-.hire-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: auto;
-}
-
-#name p {
-  color: #F2F7F5;
-  font-family: 'Bogart', sans-serif;
-  font-weight: bold;
-  font-size: 4.75em;
-  padding-left: 0.5em;
-}
-
-.hire-me {
-  color: #d8779a;
-  font-weight: bold;
-  font-family: 'Bogart', sans-serif;
-  font-size: 2em;
-  margin: 0;
-  padding-right: 3rem;
-  cursor: pointer;
-}
-
-.hire-image {
-  height: auto;
-  max-width: 10vw;
-  padding-top: 60px;
-}
-
-.popup {
+  justify-content: flex-end;
+  align-items: flex-start;
   position: absolute;
-  top: 80%;
-  right: 0;
-  width: 20vw;
-  padding: 15px;
-  background-color: #faae2b;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  display: none;
-  font-size: 1.5vw;
-  font-weight: bold;
-  font-family: "Bogart Medium";
-  text-align: center;
+  margin: auto;
+  right: 4em;
 }
 
-.hire-container:hover .popup {
-  display: block;
+.social-links a {
+  text-decoration: none;
+  display: inline-block; 
 }
 
-.popup p {
-  margin: 0;
-  color: #333;
+.social-links img {
+  width: 8em;
+  height: auto;
+  object-fit: contain; 
 }
 
-.popup .close-button {
-  margin-top: 10px;
-  padding: 6px 12px;
-  background-color: #00473E;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.popup .close-button:hover {
-  background-color: #002F28;
-  color: #F2F7F5;
-}
-
-.nav-link {
-  color: #F2F7F5;
-  font-weight: bold;
-  font-family: 'Bogart', sans-serif;
-  font-size: 2em;
-  margin: 0 1rem;
-  cursor: pointer;
-}
-
-.nav-link.active {
-  color: #faae2b;
-}
-
-button.hire-me {
-  color: #00473E;
-  background: #f5f5f5;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  border-radius: 3vw;
-  margin-right: 2em;
-}
-
-button.hire-me:hover {
-  background: #faae2b;
-  color: #00473e;
-}
-
-button.hire-me.jumping {
-  animation: jump 1s;
-}
-
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Media Queries */
-
-@media (max-width: 940px) {
-  nav {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 20px;
-  }
-
-  #name p {
-    font-size: 2.5em;
-    transform: none;
-    padding-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .hire-me {
-    font-size: 1.5em;
-    padding-right: 1.5rem;
-  }
-
-  .hire-image {
-    max-width: 8vw;
-    padding-top: 40px;
-  }
-
-  .popup {
-    width: 40vw;
-    font-size: 1em;
-  }
-}
-
-
-
-.hamburger-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  width: 30px;
-  height: 4px;
-  background-color: #F2F7F5;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-.hamburger-icon.open .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger-icon.open .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@media (max-width: 940px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: left;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #00473E;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-link {
-    color: #F2F7F5;
-    font-weight: bold;
-    font-family: 'Bogart', sans-serif;
-    font-size: 2em;
-    margin: 1rem 0;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  .nav-link.active {
-    color: #d8779a;
-  }
+#name{
+  font-family: 'Lucky Bones'; 
+  font-size: 82.2px; 
+  color: white; 
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
