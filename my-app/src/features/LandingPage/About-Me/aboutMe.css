@@ -1,12 +1,16 @@
 .about-me {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   
   .pictureofMe img{
     flex: 1; 
     padding-right: 20px;
     border-radius: 10em;
+    height: 40em;
+    width: auto;
+    margin-left: 7em;
   }
   
   .about-me-text {
