@@ -5,6 +5,7 @@ import Welcome from './Welcome/welcome';
 import AboutMe from './About-Me/aboutMe'
 import Education from './Education/education'
 import Skills from './Skills/skills'
+import WorkExperiences from './Work-Experiences/workexperiences'
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <AboutMe />
       <Education />
       <Skills />
+      <WorkExperiences />
     </div>
   );
 };
