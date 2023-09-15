@@ -4,6 +4,7 @@
     font-size: 2.9em;
     text-align: center;
     color: #475D5B;
+    margin-top:1em;
 }
 .month-date{
     font-family: 'Bogart', sans-serif;
@@ -24,6 +25,7 @@
     font-weight: bold;
     font-size: 2.5em;
     color:rgba(250, 174, 43, 1);
+    margin-top:1em;
 }
 .body-content{
     font-family: 'Bogart', sans-serif;
@@ -51,3 +53,28 @@
     margin: 0 auto;
     transform: translate(0px, 90px);
 }
+.experienceContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+
+  }
+  
+  .experienceColumn {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .experienceSection2{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .experienceSection2:nth-child(3) {
+    grid-column: span 2; 
+    align-self: center; 
+    margin-top: 7vw;
+    /* display: inline; */
+  }
+  
