@@ -1,4 +1,3 @@
-// SkillCard.js
 import React from 'react';
 import './skillcard.css';
 

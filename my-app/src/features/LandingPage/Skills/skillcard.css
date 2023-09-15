@@ -36,19 +36,15 @@
     font-size: 16px; /* Set the font size of the text */
     color: #333; /* Set the text color */
   }
-  
-  /* Add some space between the skill card title and the text */
-  .skill-card h3 {
-    /* You can add any styles for the title here */
-  }
-  
-  /* Optional: Hide the scrollbar */
-  .skill-cards-container::-webkit-scrollbar {
-    display: none;
-  }
-  
+
   .skill-card p{
     font-family: Bogart;
     font-size: 1.5vw;
     font-weight: 450;
+  }
+  .skillsHeader img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    transform: translate(0px, 200px);
   }

@@ -4,7 +4,7 @@ import Navbar from '../Navbar/navbar';
 import Welcome from './Welcome/welcome';
 import AboutMe from './About-Me/aboutMe'
 import Education from './Education/education'
-
+import Skills from './Skills/skills'
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -14,6 +14,7 @@ const LandingPage = () => {
       <Welcome />
       <AboutMe />
       <Education />
+      <Skills />
     </div>
   );
 };

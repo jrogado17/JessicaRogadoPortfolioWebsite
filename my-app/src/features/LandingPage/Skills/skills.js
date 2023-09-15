@@ -1,25 +1,26 @@
 import React from 'react';
-import underline from '../images/underlin.png';
-import SkillCard from './skillcard'; // Import the SkillCard component
-import jsImage from '../images/js.png';
-import htmlImage from '../images/HTML.png';
-import cssImage from '../images/css.png';
-import expressjsImage from '../images/express-js.png';
-import nodejsImage from '../images/nodeJS.png';
-import reactImage from '../images/react.png';
-import reduxImage from '../images/redux.png';
-import gitImage from '../images/git.png';
-import mathematicaImage from '../images/mathematica.png';
-import matlabImage from '../images/matlab.png';
-import simulinkImage from '../images/simulink.png';
-import solidworksImage from '../images/solidworks.png';
-import './styling.css'
+import SkillCard from './skillcard'; 
+import jsImage from '../../images/js.png';
+import htmlImage from '../../images/HTML.png';
+import cssImage from '../../images/css.png';
+import expressjsImage from '../../images/express-js.png';
+import nodejsImage from '../../images/nodeJS.png';
+import reactImage from '../../images/react.png';
+import reduxImage from '../../images/redux.png';
+import gitImage from '../../images/git.png';
+import mathematicaImage from '../../images/mathematica.png';
+import matlabImage from '../../images/matlab.png';
+import simulinkImage from '../../images/simulink.png';
+import solidworksImage from '../../images/solidworks.png';
+import header from '../../images/skillsHeader.png'
+import './skillcard.css'
 
 const Skills = () => {
   return (
     <section id="skills" className="section">
-            <h2 className="section-heading">Skills</h2>
-            <img src={underline} alt="swiggly underline" className="underline-divider" />
+      <div className="skillsHeader">
+            <img src={header} alt="About Me Header" />
+      </div>
       <div className="skill-cards">
         <SkillCard imageSrc={jsImage} text="JavaScript" />
         <SkillCard imageSrc={htmlImage} text="HTML" />
