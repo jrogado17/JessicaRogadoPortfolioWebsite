@@ -1,9 +1,19 @@
-.about-me {
+  .aboutmeContainer{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+  }
+  .aboutmeHeader {
+    display: inline-block;
+    margin: 0 auto; 
+    margin-bottom: 15px; 
   }
   
+  .aboutmeHeader img {
+    max-width: 100%; 
+    height: auto;
+    position: relative;
+    transform: translate(0px, 200px);
+  }
   .pictureofMe img{
     flex: 1; 
     padding-right: 20px;
@@ -13,6 +23,11 @@
     margin-left: 7em;
   }
   
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .about-me-text {
     max-width: 450px;
     font-family: 'Bogart', sans-serif;
