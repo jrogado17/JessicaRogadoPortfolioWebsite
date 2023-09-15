@@ -3,6 +3,7 @@ import './landingpage.css';
 import Navbar from '../Navbar/navbar';
 import Welcome from './Welcome/welcome';
 import AboutMe from './About-Me/aboutMe'
+import Education from './Education/education'
 
 
 const LandingPage = () => {
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Navbar currentSection={activeSection} />
       <Welcome />
       <AboutMe />
+      <Education />
     </div>
   );
 };
