@@ -4,7 +4,6 @@
     font-size: 2.9em;
     text-align: center;
     color: #475D5B;
-    margin-top: 2em; 
 }
 .month-date{
     font-family: 'Bogart', sans-serif;
@@ -22,13 +21,33 @@
 
 .subtitle{
     font-family: 'Bogart', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.5em;
     color:rgba(250, 174, 43, 1);
 }
 .body-content{
     font-family: 'Bogart', sans-serif;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2.4em;
     color: #475D5B;
+    width: 40vw;
+}
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px;
+    margin-top:4vw;
+}
+
+.experienceSection{
+    padding: 4vw;
+    padding-bottom: 0;
+    padding-top:0;
+}
+
+#Rivian{
+    display: block;
+    margin: 0 auto;
+    transform: translate(0px, 90px);
 }
