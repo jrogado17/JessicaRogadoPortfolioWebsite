@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <section id="skills" className="section">
       <div className="skillsHeader">
-            <img src={header} alt="About Me Header" />
+            <img src={header} alt="Skills Header" />
       </div>
       <div className="skill-cards">
         <SkillCard imageSrc={jsImage} text="JavaScript" />
