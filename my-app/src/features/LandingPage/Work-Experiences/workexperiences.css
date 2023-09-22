@@ -85,7 +85,7 @@
     display: inline-block;
     max-width: 70vw;
     height: auto;
-    transform: translate(-200px, -190px);
+    transform: translate(-7em, -190px);
   }
 
   .body-content a {
@@ -107,3 +107,9 @@
     gap: 20px;
     align-items: center; 
   }
+  #background{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:0;
+  }
+

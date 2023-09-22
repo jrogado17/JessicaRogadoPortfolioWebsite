@@ -100,56 +100,68 @@ const WorkExperiences = () => {
         <div className="position-title">Undergraduate Research Assistant</div>
         <div className="month-date">August 2021 - May 2022</div>
         <div className='experienceContainer'>
-      <div className="experienceSection">
-        <div className="subtitle">Incorporating Gravitational Influences:</div>
-        <div className="body-content">
-          <p>
-            Developed and incorporated equations to account for the influence of Earth's gravity on fluid dynamics, enhancing understanding of fluid behavior in zero gravity, with potential applications in aerospace and space exploration.
-          </p>
-        </div>
-      </div>
-      <div className="experienceSection">
-        <div className="subtitle">CAD Model Development:</div>
-        <div className="body-content">
-          <p>
-            Created a precise CAD model using SolidWorks, accurately representing the experimental setup for effective simulation and analysis of fluid behavior in zero-gravity conditions.
-          </p>
-        </div>
-      </div>
-      <div className="experienceSection">
-        <div className="subtitle">Variable Gathering and Documentation:</div>
-        <div className="body-content">
-          <p>
-            Meticulously gathered and documented relevant variables, including fluid characteristics such as viscosity and density, ensuring the accuracy and reliability of simulations to closely mimic real-world conditions and gravitational effects.
-          </p>
-        </div>
-      </div>
-      <div className="experienceSection">
-        <div className="subtitle">Governing Equations:</div>
-        <div className="body-content">
-          <p>
-          Navier-Stokes and Energy Equations for liquid and vapor phase:
-          </p>
-          <div className="image-container">
-          <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img>
-          <div id= "eqn">
-          <p>
-          Ready more about the case-study{" "}
-          <span className="center-link">
-            <a
-              href="https://ntrs.nasa.gov/api/citations/20190030757/downloads/20190030757.pdf"
-              className="subtitle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HERE
-            </a>
-          </span>
-        </p>
+            <div className="experienceSection" id='background'>
+          <div className="subtitle">Background</div>
+            <div className="body-content">
+              <p>
+              My research delved into fluid dynamics in zero-gravity environments, where traditional experiments are often expensive and logistically challenging. 
+              To overcome these obstacles, we employed Computational Fluid Dynamics (CFD) simulations. These simulations allowed us to study fluid behavior in zero gravity 
+              without the need for costly physical experiments.  
+              One crucial aspect we considered was the influence of Earth's gravity on fluid dynamics. 
+              On Earth, gravity significantly affects how fluids move. In our simulations, we incorporated equations to account 
+              for this influence. This research enhanced our understanding of fluid behavior in zero gravity and has applications 
+              in aerospace and space exploration.
+              </p>
+            </div>
+            <div className="subtitle">Variable Gathering and Documentation:</div>
+            <div className="body-content">
+              <p>
+                Meticulously gathered and documented relevant variables, including fluid characteristics such as viscosity and density, ensuring the accuracy and reliability of simulations to closely mimic real-world conditions and gravitational effects.
+              </p>
+            </div>
           </div>
-        </div>
-        </div>
-      </div>
+          <div className="experienceSection" id='background'>
+            <div className="subtitle">Governing Equations:</div>
+            <div className="body-content">
+              <p>
+              Navier-Stokes and Energy Equations for liquid and vapor phase:
+              </p>
+              <div className="image-container">
+              <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img>
+              <div id= "eqn">
+              <p>
+              Ready more about the case-study{" "}
+              <span className="center-link">
+                <a
+                  href="https://ntrs.nasa.gov/api/citations/20190030757/downloads/20190030757.pdf"
+                  className="subtitle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  HERE
+                </a>
+              </span>
+            </p>
+              </div>
+            </div>
+            </div>
+            </div>
+          <div className="experienceSection">
+            <div className="subtitle">Incorporating Gravitational Influences:</div>
+            <div className="body-content">
+              <p>
+                Developed and incorporated equations to account for the influence of Earth's gravity on fluid dynamics, enhancing understanding of fluid behavior in zero gravity, with potential applications in aerospace and space exploration.
+              </p>
+            </div>
+          </div>
+          <div className="experienceSection">
+            <div className="subtitle">CAD Model Development:</div>
+            <div className="body-content">
+              <p>
+                Created a precise CAD model using SolidWorks, accurately representing the experimental setup for effective simulation and analysis of fluid behavior in zero-gravity conditions.
+              </p>
+            </div>
+          </div>
       </div>
     </div>
 </section>
