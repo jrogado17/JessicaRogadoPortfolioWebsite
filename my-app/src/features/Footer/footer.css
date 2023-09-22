@@ -18,7 +18,7 @@
 
 .get-in-touch h2 {
   font-family: 'Lucky Bones'; 
-  font-size: 4em; 
+  font-size: 2.7em; 
   margin: 0;
   margin-top: 1vw;
   color: #475D5B;
@@ -27,10 +27,10 @@
 .get-in-touch p {
   font-family: 'Bogart', sans-serif;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 1.3vw;
   text-align: center;
   color: #475D5B;
-  max-width: 40em;
+  max-width: 44em;
   margin: 0 auto 1em auto; 
 }
 
