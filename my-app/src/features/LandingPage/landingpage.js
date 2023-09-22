@@ -6,6 +6,7 @@ import AboutMe from './About-Me/aboutMe'
 import Education from './Education/education'
 import Skills from './Skills/skills'
 import WorkExperiences from './Work-Experiences/workexperiences'
+import Footer from '../Footer/footer'
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Education />
       <Skills />
       <WorkExperiences />
+      <Footer />
     </div>
   );
 };

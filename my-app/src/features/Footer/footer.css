@@ -1,0 +1,53 @@
+/* Footer CSS */
+
+
+@font-face {
+  font-family: 'Lucky Bones';
+  src: url('../fonts/Luckybones-Bold.ttf') format('truetype'); 
+}
+.content-container {
+    min-height: calc(100vh - 80px); /* Adjust the height as needed */
+    /* 80px is the combined height of the footer and the scroll-to-top button */
+    /* This ensures that the footer background covers the content */
+  }
+  
+  .footer {
+    background-color: #00473E; 
+    color: #fff; 
+    text-align: center;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .get-in-touch h2{
+    font-family: 'Lucky Bones'; 
+    font-size: 2.7em; 
+    color: white; 
+  }
+
+  .get-in-touch p{
+    font-family: 'Bogart', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    max-width: 50em;
+    margin: 0 auto 1em auto; 
+  }
+  
+  .scroll-to-top button {
+
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .get-in-touch {
+    padding-bottom: 1em; /* Add padding as needed */
+    padding-top: 15px;
+  }
+  
