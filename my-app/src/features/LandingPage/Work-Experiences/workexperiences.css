@@ -92,3 +92,13 @@
     text-decoration: none;
     font-size: 1.2em;
   }
+  
+  #eqn{
+    transform: translate(0px, -20vw);
+  }
+  .center-link, #eqn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -127,14 +127,25 @@ const WorkExperiences = () => {
         <div className="subtitle">Governing Equations:</div>
         <div className="body-content">
           <p>
-          Navier-Stokes and Energy Equation for liquid and vapor phase
+          Navier-Stokes and Energy Equations for liquid and vapor phase:
           </p>
           <div className="image-container">
           <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img>
+          <div id= "eqn">
           <p>
-          Ready more about the case-study
-          </p>
-          <a href="https://ntrs.nasa.gov/api/citations/20190030757/downloads/20190030757.pdf" className="subtitle" target="_blank" rel="noopener noreferrer">HERE</a>
+          Ready more about the case-study{" "}
+          <span className="center-link">
+            <a
+              href="https://ntrs.nasa.gov/api/citations/20190030757/downloads/20190030757.pdf"
+              className="subtitle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              HERE
+            </a>
+          </span>
+        </p>
+          </div>
         </div>
         </div>
       </div>
