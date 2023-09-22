@@ -1,7 +1,7 @@
 import React from 'react';
 import './education.css'
 import ghfsaImage from '../../images/GHFSA.png';
-import csulbImage from '../../images/CSULB.png';
+import csulbImage from '../../images/csulb.png';
 import header from '../../images/educationHeader.png'
 
 const Education = () => {
