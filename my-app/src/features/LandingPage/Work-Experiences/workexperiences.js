@@ -99,6 +99,7 @@ const WorkExperiences = () => {
         </div>
         <div className="position-title">Undergraduate Research Assistant</div>
         <div className="month-date">August 2021 - May 2022</div>
+        <div className='experienceContainer'>
       <div className="experienceSection">
         <div className="subtitle">Incorporating Gravitational Influences:</div>
         <div className="body-content">
@@ -148,6 +149,7 @@ const WorkExperiences = () => {
           </div>
         </div>
         </div>
+      </div>
       </div>
     </div>
 </section>
