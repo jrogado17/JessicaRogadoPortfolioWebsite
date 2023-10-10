@@ -40,7 +40,7 @@
     font-weight: 450;
   }
   .skillsHeader img {
-    max-width: 100%;
+    width: 50vw;
     height: auto;
     position: relative;
     transform: translate(0px, 200px);
