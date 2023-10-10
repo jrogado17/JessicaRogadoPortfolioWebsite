@@ -32,3 +32,7 @@ body {
   height: 100vh; 
 }
   
+#welcome{
+  height:auto;
+  width: 50vw;
+}

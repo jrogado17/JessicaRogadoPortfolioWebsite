@@ -9,18 +9,19 @@
   }
   
   .aboutmeHeader img {
-    max-width: 100%; 
+    max-width: 50vw; 
     height: auto;
     position: relative;
     transform: translate(0px, 200px);
+    padding-bottom: 2vw;
   }
   .pictureofMe img{
     flex: 1; 
     padding-right: 20px;
-    border-radius: 10em;
-    height: 40em;
+    border-radius: 5em;
+    height: 35em;
     width: auto;
-    margin-left: 7em;
+    margin-left: 15em;
   }
   
   .about-me {
@@ -32,11 +33,11 @@
     max-width: 450px;
     font-family: 'Bogart', sans-serif;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: left;
     color: #475D5B;
     max-width: 22em;
-    margin: 0 auto 1em auto; 
+    margin: 0 auto 0em 5vw; 
   }
   #Introduction{
     text-align: center;
