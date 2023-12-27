@@ -1,6 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
+.italic-text {
+    font-style: italic;
+    font-style: bold;
   }
 
 .WelcomeSection{
@@ -10,18 +10,12 @@ body {
 #welcomeText {
     font-family: 'Bogart', sans-serif;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 1em;
     text-align: center;
     color: #475D5B;
     max-width: 22em;
     margin: 0 auto 1em auto; 
-  }
-  #lb {
-    font-family: 'Bogart', sans-serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    text-align: center;
-    color: #475D5B;
+    
   }
 
 .welcomeSection {
