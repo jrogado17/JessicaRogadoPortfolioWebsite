@@ -1,5 +1,6 @@
 body {
   background-color: #fbead1;
+  margin: 0;
 }
 
 .italic-text {
@@ -16,21 +17,20 @@ body {
   font-family: 'Bogart', sans-serif;
   font-weight: 500;
   text-align: left;
-  color: #475D5B;
+  max-width: 100%;
 }
 
 h1 {
   font-weight: 600;
+  font-size: 5vw;
+  margin-bottom: 0; /* Add this line to remove margin-bottom */
 }
 
 .welcomeContainer {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px 24px;
+  margin: calc(12vh + 6vh) auto 0;
   max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-left:1em;
 }
 
 .line {
@@ -39,31 +39,85 @@ h1 {
   margin-bottom: 0;
   padding: 8px;
   font-size: 1.3vw;
-  line-height: 1.1;
+  line-height: .7;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0s ease-in-out, transform 0s ease-in-out;
+}
+.visible {
+  animation: slideInText 0.5s ease-in-out forwards;
+}
+
+@keyframes slideInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .flower-img {
-  width: 24px; /* Adjust the width as needed */
-  height: 24px; /* Set height to the desired value */
-  margin-left: 8px; /* Add spacing between text and image */
+  width: 5vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out; 
+}
+.flower-img:hover {
+  transform: rotate(360deg);
 }
 
-.display-heading {
-  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+
+.line.slide-left {
+  animation: slideLeft 2s ease-in-out forwards;
 }
 
-.flower-text-div {
-  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+.line.slide-right {
+  animation: slideRight 2s ease-in-out forwards;
 }
 
-/* Additional styles for flower-img can go here */
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-/* Add hover effect example for demonstration */
-/* .display-text-div:hover .display-heading { */
-  /* transform: rotate(360deg); */
-/* } */
-/*  */
-/* .display-text-div:hover .flower-text-div { */
-  /* transform: rotate(360deg); */
-/* } */
-/*  */
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.line:nth-child(1) {
+  animation-delay: 0.2s; /* Adjust the delay for the first line */
+}
+
+.line:nth-child(2) {
+  animation-delay: 0.4s; /* Adjust the delay for the second line */
+}
+
+.line:nth-child(3) {
+  animation-delay: 0.6s; /* Adjust the delay for the third line */
+}
+
+.line:nth-child(4) {
+  animation-delay: 0.8s; /* Adjust the delay for the fourth line */
+}
+
+.line:nth-child(5) {
+  animation-delay: 1.0s; /* Adjust the delay for the fifth line */
+}
+

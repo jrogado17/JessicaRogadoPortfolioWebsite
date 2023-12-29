@@ -1,8 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
-@font-face {
-  font-family: 'HarmondEBE';
-  src: url('../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
-}
 nav {
   position: fixed;
   top: 0;
@@ -19,14 +14,18 @@ nav {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  display: flex;}
+  margin-top: 3vw;
+  display: flex;
+  font-weight: bold;
+}
 
 #name {
-  font-family: 'HarmondEBE'; /* Use your desired font-family */
-  font-size: 5vw; /* Adjust the font size as needed */
+  font-family: 'Bogart', sans-serif;
+  font-size: 6em; 
   color: black; /* Text color */
   text-decoration: none; /* Remove default underline for links */
   margin-left: 20px; 
+  font-style: italic;
 }
 
 #NavBar{
