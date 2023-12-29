@@ -23,17 +23,31 @@ const Welcome = () => {
         </h1>
       </div>
       <div id='line2' className="display-text-div line slide-right" style={{animationDelay: '0.4s'}}>
-        <h1 className="display-heading">a <span className="italic-text">Mechanical Engineer</span></h1>
+        <h1 className="display-heading">a   
+        <span class="text-spike"> ✹ </span>
+        <span className="italic-text"> Mechanical Engineer </span>
+        <span class="text-spike"> ✹ </span>
+        </h1>
       </div>
       <div id='line3' className="display-text-div line slide-left" style={{animationDelay: '0.6s'}}>
         <h1 className="display-heading">with a background of <span className="italic-text">Physics</span></h1>
       </div>
       <div id='line4' className="display-text-div line slide-right" style={{animationDelay: '0.8s'}}>
-        <h1 className="display-heading">based in <span className="italic-text">Long Beach, CA</span></h1>
+        <h1 className="display-heading">based in <span className="italic-text">Long Beach, CA</span>
+        <img
+            src="https://uploads-ssl.webflow.com/62256e3694580b7ffbcea5c7/6228e1a8be59174091781f10_smiley-icon.svg" loading="lazy" data-w-id="6ea44d45-15b7-a2db-24f3-bdf76afe1fa1" 
+            alt="smile icon" 
+            className="smile-img">
+          </img>
+      </h1>
       </div>
       <div id='line5' className="display-text-div line slide-left" style={{animationDelay: '1.0s'}}>
-        <h1 className="display-heading">specializing in <span className="italic-text">Software Development</span></h1>
-      </div>
+        <h1 className="display-heading">specializing in 
+        <span class="text-star"> ✦ </span>
+        <span className="italic-text"> Software Development </span>
+        <span class="text-star"> ✦ </span>
+        </h1>
+      </div>   
     </div>
   );
 };

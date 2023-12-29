@@ -22,13 +22,14 @@ body {
 
 h1 {
   font-weight: 600;
-  font-size: 5vw;
-  margin-bottom: 0; /* Add this line to remove margin-bottom */
+  font-size: 4.2vw;
+  margin-bottom: 0; 
+  letter-spacing: 2px;
 }
 
 .welcomeContainer {
   padding: 16px 24px;
-  margin: calc(12vh + 6vh) auto 0;
+  margin: calc(12vh ) auto 0;
   max-width: 1400px;
   margin-left:1em;
 }
@@ -39,7 +40,7 @@ h1 {
   margin-bottom: 0;
   padding: 8px;
   font-size: 1.3vw;
-  line-height: .7;
+  line-height: .6;
   opacity: 0; /* Initially set opacity to 0 */
   transition: opacity 0s ease-in-out, transform 0s ease-in-out;
 }
@@ -58,7 +59,7 @@ h1 {
   }
 }
 
-.flower-img {
+.flower-img, .smile-img {
   width: 5vw;
   height: auto;
   margin-bottom: 15px;
@@ -70,6 +71,74 @@ h1 {
 .flower-img:hover {
   transform: rotate(360deg);
 }
+
+
+.text-spike {
+  color: #4697f6;
+  cursor: pointer;
+}
+.text-spike {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+}
+
+.text-spike:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.smile-img {
+  transform: scaleY(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.smile-img:hover {
+  animation: squishAndExpand 0.5s ease-in-out;
+}
+
+@keyframes squishAndExpand {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+}
+.text-star{
+  color: #19d175;
+  cursor: cursor;
+}
+.text-star {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.text-star:hover {
+  animation: shrinkAndExpand 0.5s ease-in-out;
+}
+
+@keyframes shrinkAndExpand {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+}
+
+
 
 
 .line.slide-left {
