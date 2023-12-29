@@ -8,7 +8,7 @@
 }
 
 .footer {
-  color: #475D5B;
+  color: black;
   text-align: center;
   position: inherit;
   width:100%;
@@ -17,47 +17,26 @@
 }
 
 .get-in-touch h2 {
-  font-family: 'Lucky Bones'; 
+  font-family: 'Bogart', sans-serif; 
   font-size: 2.7em; 
   margin: 0;
-  margin-top: 1vw;
-  color: #475D5B;
+  margin-top: 1em;
+  color: black;
 }
 
 .get-in-touch p {
   font-family: 'Bogart', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3vw;
   text-align: center;
-  color: #475D5B;
-  max-width: 44em;
-  margin: 0 auto 1em auto; 
-}
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  z-index: 1000; 
-}
-
-.scroll-to-top button {
-  color: rgba(250, 174, 43, 1);
-  background-color: rgba(0, 71, 62, 0); /* Transparent background */
-  border-color: rgba(0, 71, 62, 0);
-  font-family: 'Bogart', sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding:1em;
-  padding-right:0;
-  padding-bottom:0;
+  color: black;
+  max-width: auto;
+  margin: 1em auto 1em auto; 
 }
 
 .get-in-touch a {
   text-decoration: none;
-  color: rgba(250, 174, 43, 1);
+  color: #4697f6;
   font-weight: bolder;
 }
 
