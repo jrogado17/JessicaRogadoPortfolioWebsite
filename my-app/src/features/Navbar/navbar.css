@@ -1,72 +1,34 @@
 @import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
 @font-face {
-  font-family: 'Lucky Bones';
-  src: url('../fonts/Luckybones-Bold.ttf') format('truetype'); 
-}
-@font-face {
   font-family: 'HarmondEBE';
   src: url('../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
 }
-body {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-html{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 10vh;
-  background-color: #00473E;
   padding: 10px;
-  display: flex;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbarContainer {
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
-}
-
-.social-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  position: absolute;
-  margin: auto;
-  right: 4em;
-}
-
-.social-links a {
-  text-decoration: none;
-  display: inline-block; 
-}
-
-.social-links img {
-  width: 8em;
-  height: auto;
-  object-fit: contain; 
-}
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;}
 
 #name {
-  font-family: 'HarmondEBE'; 
-  font-size: 60px; 
-  color: white; 
-  position: absolute;
-  top: -20px; /* Adjust the top value as needed */
-  left: 20px; /* Adjust the left value as needed */
-  text-align: center;
+  font-family: 'HarmondEBE'; /* Use your desired font-family */
+  font-size: 5vw; /* Adjust the font size as needed */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove default underline for links */
+  margin-left: 20px; 
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 800px) {
-  #name {
-    position: static; /* Change to static positioning to allow stacking */
-    text-align: center; /* Center the text for smaller screens */
-  }
+#NavBar{
+  margin-bottom: 6vh;
 }

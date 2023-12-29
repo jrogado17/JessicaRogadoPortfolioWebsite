@@ -1,32 +1,69 @@
+body {
+  background-color: #fbead1;
+}
+
 .italic-text {
-    font-style: italic;
-    font-style: bold;
-  }
-
-.WelcomeSection{
-    display: flex;
-    flex-direction: column;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 900; /* You can remove this line if not needed */
 }
+
+* {
+  box-sizing: border-box;
+}
+
 #welcomeText {
-    font-family: 'Bogart', sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    text-align: center;
-    color: #475D5B;
-    max-width: 22em;
-    margin: 0 auto 1em auto; 
-    
-  }
+  font-family: 'Bogart', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: #475D5B;
+}
 
-.welcomeSection {
+h1 {
+  font-weight: 600;
+}
+
+.welcomeContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.line {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  height: 100vh; 
+  align-items: center;
+  margin-bottom: 0;
+  padding: 8px;
+  font-size: 1.3vw;
+  line-height: 1.1;
 }
-  
-#welcome{
-  height:auto;
-  width: 50vw;
+
+.flower-img {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Set height to the desired value */
+  margin-left: 8px; /* Add spacing between text and image */
 }
+
+.display-heading {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.flower-text-div {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* Additional styles for flower-img can go here */
+
+/* Add hover effect example for demonstration */
+/* .display-text-div:hover .display-heading { */
+  /* transform: rotate(360deg); */
+/* } */
+/*  */
+/* .display-text-div:hover .flower-text-div { */
+  /* transform: rotate(360deg); */
+/* } */
+/*  */
