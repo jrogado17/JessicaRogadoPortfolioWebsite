@@ -1,47 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Hide the overflowing content */
+}
 
 .skill-cards-container {
-    display: flex;
-    
-    justify-content: center; 
-    width: 100%; 
-    margin-top: 16px; 
-    margin-bottom: 32px; 
-    padding: 16px 0; 
-    
-  }
-  
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
 
-  .skill-card {
-    min-width: 200px; 
-    flex: 0 0 auto; 
-    padding: 16px; 
-    margin: 16px; 
-    text-align: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 8px; 
-  }
-  
-  .skill-card img {
-    width: auto; 
-    height: 80px; 
-    object-fit: cover; 
-    margin-bottom: 16px; 
-  }
-  
+.skill-cards {
+  display: flex;
+  gap: 16px; /* Adjust the gap between items as needed */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
 
-  .skill-card p {
-    font-size: 16px; 
-    color: #333; 
-  }
+.skill-card {
+  /* Your existing styles for skill cards */
+  min-width: 200px;
+  padding: 16px;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
-  .skill-card p{
-    font-family: Bogart;
-    font-size: 1.5vw;
-    font-weight: 450;
-  }
-  .skillsHeader img {
-    width: 50vw;
-    height: auto;
-    position: relative;
-    transform: translate(0px, 200px);
-  }
+.skill-card img {
+  width: auto;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.skill-card p {
+  font-family: 'Bogart';
+  font-size: 1.5vw;
+  font-weight: 450;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import SkillCard from './skillcard'; 
 import jsImage from '../../images/js.png';
 import htmlImage from '../../images/HTML.png';
@@ -12,16 +12,38 @@ import mathematicaImage from '../../images/mathematica.png';
 import matlabImage from '../../images/matlab.png';
 import simulinkImage from '../../images/simulink.png';
 import solidworksImage from '../../images/solidworks.png';
-import header from '../../images/skillsHeader.png'
-import './skillcard.css'
+import './skillcard.css';
 
 const Skills = () => {
+  const skillCardsContainerRef = useRef(null);
+
+  useEffect(() => {
+    const slideSkills = () => {
+      skillCardsContainerRef.current.style.transition = 'transform 5s linear';
+      skillCardsContainerRef.current.style.transform = 'translateX(-100%)';
+
+      const resetTransition = () => {
+        skillCardsContainerRef.current.style.transition = 'none';
+        skillCardsContainerRef.current.style.transform = 'translateX(0)';
+        // Use requestAnimationFrame to ensure the transition is applied after resetting
+        requestAnimationFrame(() => {
+          skillCardsContainerRef.current.style.transition = 'transform 5s linear';
+          skillCardsContainerRef.current.style.transform = 'translateX(-100%)';
+        });
+      };
+
+      // Use setTimeout to wait for the transition before resetting
+      setTimeout(resetTransition, 5000);
+    };
+
+    const intervalId = setInterval(slideSkills, 10000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <section id="skills" className="section">
-      <div className="skillsHeader">
-            <img src={header} alt="Skills Header" />
-      </div>
-      <div className="skill-cards">
+      <div className="skill-cards" ref={skillCardsContainerRef}>
         <SkillCard imageSrc={jsImage} text="JavaScript" />
         <SkillCard imageSrc={htmlImage} text="HTML" />
         <SkillCard imageSrc={cssImage} text="CSS" />
