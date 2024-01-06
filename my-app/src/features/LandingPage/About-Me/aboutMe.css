@@ -1,44 +1,67 @@
+@font-face {
+  font-family: 'Combat';
+  src: url('../../fonts/Combat.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Harmond';
+  src: url('../../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
+}
+
   .aboutmeContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .aboutmeHeader {
     display: inline-block;
     margin: 0 auto; 
     margin-bottom: 15px; 
   }
-  
-  .aboutmeHeader img {
-    max-width: 50vw; 
-    height: auto;
-    position: relative;
-    transform: translate(0px, 200px);
-    padding-bottom: 2vw;
-  }
-  .pictureofMe img{
-    flex: 1; 
-    padding-right: 20px;
-    border-radius: 5em;
-    height: 35em;
-    width: auto;
-    margin-left: 15em;
-  }
-  
+    
   .about-me {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   .about-me-text {
-    max-width: 450px;
     font-family: 'Bogart', sans-serif;
     font-weight: 500;
     font-size: 2.2em;
     text-align: left;
-    color: #475D5B;
-    max-width: 22em;
-    margin: 0 auto 0em 5vw; 
+    color: black;
+    max-width: 50em;
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
   #Introduction{
     text-align: center;
   }
+
+  #school, #SWE{
+    font-family: 'Bogart', sans-serif;
+    font-weight: 700;
+  }
+
+  .img{
+  width: 5vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+.gh-img{
+  width: 15vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.school{
+  width: 85vw;
+}

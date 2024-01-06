@@ -1,31 +1,51 @@
 import React from 'react';
-import picture from '../../images/aboutmepic.png'
-import header from '../../images/aboutMeHeader.png'
-import './aboutMe.css'
+import './aboutMe.css';
+import Skills from '../Skills/skills'; // Adjust the path based on the actual location of your Skills component
 
 const AboutMe = () => {
-    return (
-      <div className = 'aboutmeContainer'>
-        <div className = 'aboutmeHeader'>
-            <img src={header} alt="About Me Header" />
-        </div>
-        <div className="about-me">
-            <div className="pictureofMe">
-                <img src={picture} alt="Picture of Me" />
-            </div>
-            <div className="about-me-text">
-                <h2 id='Introduction'>Introduction</h2>
-                <p>
-                 I'm Jess, a Software Engineer with a passion for creating innovative software solutions.
-                 I specialize in full-stack development with an interest in machine learning and UX/UI.
-                    I'm dedicated to solving complex problems through clean code and efficient software design.
-                    I believe in staying up-to-date with industry best practices. This approach allows me to deliver
-                    high-quality software that not only meets but exceeds expectations.
-                </p>
-            </div>
+  return (
+    <div className='aboutmeContainer'>
+      <div className='aboutmeHeader'></div>
+      <div className='about-me'>
+        <div className='pictureofMe'></div>
+        <div className='about-me-text'>
+          <h2 id='Introduction'>Welcome To my Page!</h2>
+          <p></p>
+          <p className='school'>
+            I graduated{' '}
+            <span id='school'>
+              California State University, Long Beach
+              <img src='https://digitalskills.cpace.csulb.edu/wp-content/uploads/cropped-cropped-favicon.png' loading="lazy" className="img" alt="CSULB Logo" />
+            </span>{' '}
+            with a
+            <span id='ME'>
+              B.S. in Mechanical Engineering
+              <img src='https://static.vecteezy.com/system/resources/thumbnails/016/415/298/small/wrench-illustration-in-minimal-style-png.png' loading="lazy" className="img" alt="Mechanical Engineering Icon" />
+            </span>{' '}
+            and a
+            <span>
+              B.A. in Physics
+              <img src='https://icons.veryicon.com/png/o/education-technology/educational-icon/physics-4.png' loading="lazy" className="img" alt="Physics Icon" />
+            </span>
+            . I also completed
+            <span>
+              Fullstack Academy
+              <img src='https://s3.us-east-1.amazonaws.com/fsa2-assets/assets/Grace-Hopper/GH-Full-Lockup-Chalk.png' loading="lazy" className="gh-img" alt="Fullstack Academy Icon" />
+            </span>{' '}
+            for a certification industry
+            <span id='SWE'>
+              Software Development
+              <img src='https://cdn-icons-png.flaticon.com/512/8759/8759045.png' loading="lazy" className="img" alt="Software Development Icon" />
+            </span>
+            <span id='skills'>
+              where I learned
+              <Skills />
+            </span>
+          </p>
         </div>
       </div>
-    );
-  };
-  
-  export default AboutMe;
+    </div>
+  );
+};
+
+export default AboutMe;

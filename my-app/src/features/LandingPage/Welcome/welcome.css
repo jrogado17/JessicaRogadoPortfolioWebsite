@@ -6,7 +6,7 @@ body {
 .italic-text {
   font-style: italic;
   font-weight: bold;
-  font-weight: 900; /* You can remove this line if not needed */
+  font-weight: 900; 
 }
 
 * {
@@ -40,7 +40,7 @@ h1 {
   padding: 8px;
   font-size: 1.3vw;
   line-height: .6;
-  opacity: 0; /* Initially set opacity to 0 */
+  opacity: 0; 
   transition: opacity 0s ease-in-out, transform 0s ease-in-out;
 }
 .visible {
