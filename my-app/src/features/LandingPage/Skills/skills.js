@@ -16,46 +16,56 @@ import './skillcard.css';
 
 const Skills = () => {
   const skillCardsContainerRef = useRef(null);
+  const totalWidthRef = useRef(0);
 
   useEffect(() => {
-    const slideSkills = () => {
-      skillCardsContainerRef.current.style.transition = 'transform 5s linear';
-      skillCardsContainerRef.current.style.transform = 'translateX(-100%)';
-
-      const resetTransition = () => {
-        skillCardsContainerRef.current.style.transition = 'none';
-        skillCardsContainerRef.current.style.transform = 'translateX(0)';
-        // Use requestAnimationFrame to ensure the transition is applied after resetting
-        requestAnimationFrame(() => {
-          skillCardsContainerRef.current.style.transition = 'transform 5s linear';
-          skillCardsContainerRef.current.style.transform = 'translateX(-100%)';
-        });
-      };
-
-      // Use setTimeout to wait for the transition before resetting
-      setTimeout(resetTransition, 5000);
+    const calculateTotalWidth = () => {
+      // Calculate the total width of all cards
+      totalWidthRef.current = Array.from(skillCardsContainerRef.current.children)
+        .reduce((total, card) => total + card.offsetWidth, 0);
     };
 
-    const intervalId = setInterval(slideSkills, 10000);
+    const slideSkills = () => {
+      calculateTotalWidth();
+
+      skillCardsContainerRef.current.style.transition = 'none';
+      skillCardsContainerRef.current.style.transform = `translateX(${-totalWidthRef.current}px)`;
+
+      // Use requestAnimationFrame for a smooth transition effect
+      requestAnimationFrame(() => {
+        skillCardsContainerRef.current.style.transition = `transform ${(totalWidthRef.current / 1000)}s linear`;
+        skillCardsContainerRef.current.style.transform = 'translateX(0)';
+      });
+    };
+
+    slideSkills();
+
+    const intervalId = setInterval(slideSkills, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
+  const skillCards = [
+    { imageSrc: jsImage, text: 'JavaScript' },
+    { imageSrc: htmlImage, text: 'HTML' },
+    { imageSrc: cssImage, text: 'CSS' },
+    { imageSrc: expressjsImage, text: 'ExpressJS' },
+    { imageSrc: nodejsImage, text: 'NodeJS' },
+    { imageSrc: reactImage, text: 'React' },
+    { imageSrc: reduxImage, text: 'Redux' },
+    { imageSrc: gitImage, text: 'Git' },
+    { imageSrc: mathematicaImage, text: 'Mathematica' },
+    { imageSrc: matlabImage, text: 'Matlab' },
+    { imageSrc: simulinkImage, text: 'Simulink' },
+    { imageSrc: solidworksImage, text: 'SolidWorks' },
+  ];
+
   return (
     <section id="skills" className="section">
       <div className="skill-cards" ref={skillCardsContainerRef}>
-        <SkillCard imageSrc={jsImage} text="JavaScript" />
-        <SkillCard imageSrc={htmlImage} text="HTML" />
-        <SkillCard imageSrc={cssImage} text="CSS" />
-        <SkillCard imageSrc={expressjsImage} text="ExpressJS" />
-        <SkillCard imageSrc={nodejsImage} text="NodeJS" />
-        <SkillCard imageSrc={reactImage} text="React" />
-        <SkillCard imageSrc={reduxImage} text="Redux" />
-        <SkillCard imageSrc={gitImage} text="Git" />
-        <SkillCard imageSrc={mathematicaImage} text="Mathematica" />
-        <SkillCard imageSrc={matlabImage} text="Matlab" />
-        <SkillCard imageSrc={simulinkImage} text="Simulink" />
-        <SkillCard imageSrc={solidworksImage} text="SolidWorks" />
+        {skillCards.map((card, index) => (
+          <SkillCard key={index} {...card} />
+        ))}
       </div>
     </section>
   );
