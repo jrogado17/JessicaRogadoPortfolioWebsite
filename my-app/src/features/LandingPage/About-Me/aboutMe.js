@@ -141,8 +141,8 @@ const AboutMe = () => {
                 alt='Software Development Icon'
               />
             </span>
-            <h2 className='title' id='skills'>
-           skills</h2>
+            <h2 className='title' id='Introduction'>
+           Skills</h2>
             <span id='skills'>
               where I learned ...
               <Skills />
