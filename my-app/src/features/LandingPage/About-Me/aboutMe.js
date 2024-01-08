@@ -14,7 +14,13 @@ const AboutMe = () => {
             About Me
           </h2>
           <p className='travel-info'>
-            I love to solo travel and backpack! Where I've been...
+            I love to solo backpack aboard!
+            <img
+                src='https://cdn0.iconfinder.com/data/icons/digital-nomad-freelancer-aqua-vol-2/500/Solo_Travel-512.png'
+                className='flag-img'
+                alt='Netherlands Flag'
+              />
+            Where I've been...
           </p>
           <ul className='country-list'>
             <li>
@@ -135,6 +141,8 @@ const AboutMe = () => {
                 alt='Software Development Icon'
               />
             </span>
+            <h2 className='title' id='skills'>
+           skills</h2>
             <span id='skills'>
               where I learned ...
               <Skills />
