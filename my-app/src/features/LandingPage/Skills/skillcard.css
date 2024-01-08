@@ -5,19 +5,23 @@ body {
   margin: 0;
 }
 
+.school-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skill-cards-container {
   display: flex;
   overflow-x: auto; 
 }
 
-.skill-cards {
+.skill-cards, .school-skill-cards {
   display: flex;
   gap: 16px; 
   transition: transform 0.5s ease; 
 }
 
-.skill-card {
-
+.skill-card, .school-skill-cards {
   min-width: 200px;
   padding: 16px;
   margin: 8px;
@@ -27,19 +31,19 @@ body {
   box-sizing: border-box;
 }
 
-.skill-card img {
+.skill-card img, .school-skill-cards img {
   width: auto;
   height: 80px;
   object-fit: cover;
   margin-bottom: 16px;
 }
 
-.skill-card p {
+.skill-card p, .school-skill-cards p {
   font-size: 16px;
   color: #333;
 }
 
-.skill-card p {
+.skill-card p, .school-skill-cards p {
   font-family: 'Bogart';
   font-size: 1.5vw;
   font-weight: 450;
