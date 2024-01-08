@@ -65,3 +65,10 @@
 .school{
   width: 85vw;
 }
+
+#school,
+#ME,
+#SWE,
+#skills {
+  margin-right: 10px; /* Adjust the margin as needed */
+}

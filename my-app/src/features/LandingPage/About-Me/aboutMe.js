@@ -17,28 +17,28 @@ const AboutMe = () => {
               California State University, Long Beach
               <img src='https://digitalskills.cpace.csulb.edu/wp-content/uploads/cropped-cropped-favicon.png' loading="lazy" className="img" alt="CSULB Logo" />
             </span>{' '}
-            with a
+            with a{' '}
             <span id='ME'>
               B.S. in Mechanical Engineering
               <img src='https://static.vecteezy.com/system/resources/thumbnails/016/415/298/small/wrench-illustration-in-minimal-style-png.png' loading="lazy" className="img" alt="Mechanical Engineering Icon" />
             </span>{' '}
-            and a
+            and a {' '}
             <span>
-              B.A. in Physics
+            B.A. in Physics{' '}
               <img src='https://icons.veryicon.com/png/o/education-technology/educational-icon/physics-4.png' loading="lazy" className="img" alt="Physics Icon" />
             </span>
-            . I also completed
+            . I also completed{' '}
             <span>
-              Fullstack Academy
+              Fullstack Academy{' '}
               <img src='https://s3.us-east-1.amazonaws.com/fsa2-assets/assets/Grace-Hopper/GH-Full-Lockup-Chalk.png' loading="lazy" className="gh-img" alt="Fullstack Academy Icon" />
             </span>{' '}
-            for a certification industry
+            for a certification industry {' '}
             <span id='SWE'>
-              Software Development
+              Software Development {' '}
               <img src='https://cdn-icons-png.flaticon.com/512/8759/8759045.png' loading="lazy" className="img" alt="Software Development Icon" />
             </span>
             <span id='skills'>
-              where I learned
+              where I learned ...
               <Skills />
             </span>
           </p>
