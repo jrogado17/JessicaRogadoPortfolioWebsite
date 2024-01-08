@@ -2,9 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
-  overflow: hidden; /* Hide the overflowing content */
 }
 
 .skill-cards-container {
