@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import SkillCard from './skillcard'; 
+import SkillCard from './skillcard';
 import jsImage from '../../images/js.png';
 import htmlImage from '../../images/HTML.png';
 import cssImage from '../../images/css.png';
@@ -16,9 +16,10 @@ const SWSkills = () => {
 
   useEffect(() => {
     const calculateTotalWidth = () => {
-      // Calculate the total width of all cards
-      totalWidthRef.current = Array.from(skillCardsContainerRef.current.children)
-        .reduce((total, card) => total + card.offsetWidth, 0);
+      totalWidthRef.current = Array.from(skillCardsContainerRef.current.children).reduce(
+        (total, card) => total + card.offsetWidth,
+        0
+      );
     };
 
     const slideSkills = () => {
@@ -27,16 +28,28 @@ const SWSkills = () => {
       skillCardsContainerRef.current.style.transition = 'none';
       skillCardsContainerRef.current.style.transform = `translateX(${-totalWidthRef.current}px)`;
 
-      // Use requestAnimationFrame for a smooth transition effect
       requestAnimationFrame(() => {
-        skillCardsContainerRef.current.style.transition = `transform ${(totalWidthRef.current / 1000)}s linear`;
+        skillCardsContainerRef.current.style.transition = `transform ${(totalWidthRef.current /
+          1000)}s linear`;
         skillCardsContainerRef.current.style.transform = 'translateX(0)';
       });
     };
 
-    slideSkills();
+    const cloneSkills = () => {
+      const originalCards = Array.from(skillCardsContainerRef.current.children);
+      originalCards.forEach((card) => {
+        const clone = card.cloneNode(true);
+        skillCardsContainerRef.current.appendChild(clone);
+      });
+    };
 
-    const intervalId = setInterval(slideSkills, 2000);
+    slideSkills();
+    cloneSkills();
+
+    const intervalId = setInterval(() => {
+      slideSkills();
+      setTimeout(cloneSkills, 1000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
