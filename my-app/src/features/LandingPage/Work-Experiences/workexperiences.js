@@ -13,7 +13,7 @@ const WorkExperiences = () => {
       </div>
       <div className="experience1">
         <div className="image-container">
-          <img src={Rivian} alt='Rivian Logo' id='experience-img'></img>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rivian_logo_and_wordmark.svg/2560px-Rivian_logo_and_wordmark.svg.png' alt='Rivian Logo' id='experience-img'></img>
         </div>
         <div className="position-title">Rotational (Trail) Engineer</div>
         <div className="month-date">July 2022 - Feb 2023</div>

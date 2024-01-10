@@ -47,10 +47,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
+    padding: 50px;
 }
 
 .experienceSection{
-    padding: 1em;
+    padding: 3em;
     padding-bottom: 0; 
     padding-top:0;
 }
@@ -58,8 +59,9 @@
 #experience-img{
     display: block;
     margin: 0 auto;
-    transform: translate(0px, 90px);
-    width: 30vw;
+    /* transform: translate(0px, 90px); */
+    width: 40vw;
+    margin-top: 5em;
 }
 .experienceContainer {
     display: grid;
@@ -77,12 +79,18 @@
     display: flex;
     flex-wrap: wrap;
     align-self: center;
+    /* padding: 50px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 3em;
   }
 
   .experienceSection2:nth-child(3) {
     grid-column: span 2; 
     align-self: center; 
-    margin-top: 7vw;
+    margin-top: 50px;
+    
   }
   
   .experience3 #experience-img {
