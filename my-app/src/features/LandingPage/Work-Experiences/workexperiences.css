@@ -1,47 +1,56 @@
+.workexperienceHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-family: 'Bogart', sans-serif;
+    font-weight: 700;
+}
+.experience1{
+
+}
 .position-title{
     font-family: 'Bogart', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
-    color: #475D5B;
-    margin-top:2em;
+    margin-top: 1em;
 }
 .month-date{
     font-family: 'Bogart', sans-serif;
     font-weight: bold;
     font-size: 2em;
     text-align: center;
-    color: #475D5B;
-}
-.workexperienceHeader img{
-    width: 70vw;
-    height: auto;
-    position: relative;
-    transform: translate(15vw, 20vw);
 }
 
 .subtitle{
-    font-family: 'Bogart', sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color:rgba(250, 174, 43, 1);
+  font-family: 'Bogart', sans-serif;
+  font-weight: 800;
+  font-size: 2.2em;
     margin-top:1em;
 }
 .body-content{
-    font-family: 'Bogart', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    color: #475D5B;
-    width: 30vw;
+  font-family: 'Bogart', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    /* text-align: left; */
+    color: black;
+    /* max-width: 50em; */
+    /* text-align: left; */
+    line-height: 1.5em;
+    /* margin-left: 2em; */
+    /* margin-right: 2em; */
 }
 .body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto); 
+    grid-template-rows: repeat(2, auto);
 }
 
 .experienceSection{
-    padding: 4vw;
+    padding: 1em;
     padding-bottom: 0; 
     padding-top:0;
 }

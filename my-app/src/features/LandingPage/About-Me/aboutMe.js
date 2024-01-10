@@ -13,6 +13,19 @@ const AboutMe = () => {
           <h2 className='title' id='Introduction'>
             About Me
           </h2>
+            <p className='interests'>
+            I love to surf
+            <img
+              src='https://cdn-icons-png.flaticon.com/512/3145/3145024.png' 
+              className='flag-img'
+              alt='Surfing Icon'
+            /> and rock climb
+            <img
+              src='https://static.thenounproject.com/png/4418673-200.png' 
+              className='flag-img'
+              alt='Rock Climbing Icon'
+            />
+          </p>
           <p className='travel-info'>
             I love to solo backpack aboard!
             <img

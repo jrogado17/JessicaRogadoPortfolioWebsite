@@ -9,7 +9,7 @@ const WorkExperiences = () => {
   return (
     <section className="work-experiences">
       <div className="workexperienceHeader">
-        <img src={header} alt="Work Experience Header" />
+        <h2 className='title'> Work Experiences </h2>
       </div>
       <div className="experience1">
         <div className="image-container">
