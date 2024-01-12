@@ -1,16 +1,12 @@
 import React from 'react';
 import './workexperiences.css';
-import header from '../../images/workexperienceHeader.png';
-import Rivian from '../../images/Rivian.png';
-import MCFFL from '../../images/MCFFL.png'
-import NSEqn from '../../images/NSEqn.png'
 
 const WorkExperiences = () => {
   return (
     <section className="work-experiences">
-      <div className="workexperienceHeader">
-        <h2 className='title'> Work Experiences </h2>
-      </div>
+        <h2 className='PageTitle' id='Introduction'>
+            Work Experiences
+          </h2>
       <div className="experience1">
         <div className="image-container">
           <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rivian_logo_and_wordmark.svg/2560px-Rivian_logo_and_wordmark.svg.png' alt='Rivian Logo' id='experience-img'></img>
@@ -95,7 +91,10 @@ const WorkExperiences = () => {
       </div>
       <div className="experience3">
       <div className="image-container">
-          <img src={MCFFL} alt='MCFFL Logo' id='experience-img'></img>
+          <h1 id='MCFL'>Multiphase and Complex Fluid Lab 
+          <br/>
+            at California State University, Long Beach
+            </h1>
         </div>
         <div className="position-title">Undergraduate Research Assistant</div>
         <div className="month-date">August 2021 - May 2022</div>
@@ -127,7 +126,7 @@ const WorkExperiences = () => {
               Navier-Stokes and Energy Equations for liquid and vapor phase:
               </p>
               <div className="image-container">
-              <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img>
+              {/* <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img> */}
               <div id= "eqn">
               <p>
               Ready more about the case-study{" "}

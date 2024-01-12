@@ -7,6 +7,15 @@
   src: url('../../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
 }
 
+.PageTitle{
+  font-family: 'Bogart', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 800; 
+  font-size: 3em;
+  margin-bottom: 1em; 
+  letter-spacing: 2px;
+}
   .aboutmeContainer{
     display: flex;
     flex-direction: column;

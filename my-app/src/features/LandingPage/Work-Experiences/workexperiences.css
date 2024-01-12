@@ -1,16 +1,8 @@
-.workexperienceHeader{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title{
   font-family: 'Bogart', sans-serif;
     font-weight: 700;
 }
-.experience1{
 
-}
 .position-title{
     font-family: 'Bogart', sans-serif;
     font-weight: bold;
@@ -35,13 +27,8 @@
   font-family: 'Bogart', sans-serif;
     font-weight: 600;
     font-size: 2em;
-    /* text-align: left; */
     color: black;
-    /* max-width: 50em; */
-    /* text-align: left; */
     line-height: 1.5em;
-    /* margin-left: 2em; */
-    /* margin-right: 2em; */
 }
 .body {
     display: grid;
@@ -59,7 +46,6 @@
 #experience-img{
     display: block;
     margin: 0 auto;
-    /* transform: translate(0px, 90px); */
     width: 40vw;
     margin-top: 5em;
 }
@@ -79,23 +65,10 @@
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    /* padding: 50px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 3em;
-  }
-
-  .experienceSection2:nth-child(3) {
-    grid-column: span 2; 
-    align-self: center; 
-    margin-top: 50px;
-    
-  }
-  
-  .experience3 #experience-img {
-    width: 30vw;
-    height: 33vh;
   }
   #NSEqn{
     display: inline-block;
@@ -109,23 +82,23 @@
     font-size: 1.2em;
   }
   
-  #eqn{
-    transform: translate(0px, -20vw);
-  }
   .center-link, #eqn{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .experience3 > .experienceSection{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center; 
-  }
+  
   #background{
     display: flex;
     flex-direction: column;
     padding-bottom:0;
   }
 
+#MCFL{
+  font-family: 'Bogart', sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
