@@ -12,9 +12,13 @@
   font-style: italic;
   font-weight: bold;
   font-weight: 800; 
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 1em; 
   letter-spacing: 2px;
+    text-align: center;
+}
+#Introduction{
+  text-align: center;
 }
   .aboutmeContainer{
     display: flex;
@@ -43,9 +47,6 @@
     line-height: 1.5em;
     margin-left: 2em;
     margin-right: 2em;
-  }
-  #Introduction{
-    text-align: center;
   }
 
   #ME, #SWE{

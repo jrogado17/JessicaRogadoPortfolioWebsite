@@ -1,12 +1,12 @@
 import React from 'react';
 import './workexperiences.css';
-
+// import NSEqn from '../../images/NSEqn.png'
 const WorkExperiences = () => {
   return (
     <section className="work-experiences">
-        <h2 className='PageTitle' id='Introduction'>
-            Work Experiences
-          </h2>
+      <h2 className='PageTitle' id='Introduction'>
+        Work Experiences
+      </h2>
       <div className="experience1">
         <div className="image-container">
           <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rivian_logo_and_wordmark.svg/2560px-Rivian_logo_and_wordmark.svg.png' alt='Rivian Logo' id='experience-img'></img>
@@ -98,11 +98,9 @@ const WorkExperiences = () => {
         </div>
         <div className="position-title">Undergraduate Research Assistant</div>
         <div className="month-date">August 2021 - May 2022</div>
-        <div className='experienceContainer'>
-            <div className="experienceSection" id='background'>
-          <div className="subtitle">Background</div>
-            <div className="body-content">
-              <p>
+        <div className="background">
+          <div className="background-top">Background</div>
+              <p id='background-p'>
               My research delved into fluid dynamics in zero-gravity environments, where traditional experiments are often expensive and logistically challenging. 
               To overcome these obstacles, we employed Computational Fluid Dynamics (CFD) simulations. These simulations allowed us to study fluid behavior in zero gravity 
               without the need for costly physical experiments.  
@@ -112,6 +110,8 @@ const WorkExperiences = () => {
               in aerospace and space exploration.
               </p>
             </div>
+            <div className='experienceContainer'>
+            <div className="experienceSection" id='background'>
             <div className="subtitle">Variable Gathering and Documentation:</div>
             <div className="body-content">
               <p>
@@ -127,7 +127,11 @@ const WorkExperiences = () => {
               </p>
               <div className="image-container">
               {/* <img src={NSEqn} alt='Navier-Stokes Equations' id='NSEqn'></img> */}
-              <div id= "eqn">
+              <div className='equations'>
+                ∂𝜌/∂𝑡 + ∇(𝜌𝐯) = 0 <br/>
+                ∂/∂𝑡(𝜌𝐯) + ∇(𝜌𝐯𝐯) = -∇𝑝 + ∇ [𝜇𝑒𝑓𝑓(∇𝐯 + ∇ν𝑇)] + 𝜌𝐠 + 𝐅𝑣𝑜𝑙  <br/>
+                ∂/∂𝑡(𝜌𝐸) + ∇(𝐯(𝜌𝐸 + 𝑝)) = ∇(𝑘𝑒𝑓𝑓∇𝑇) + 𝑆ℎ;
+              </div>
               <p>
               Ready more about the case-study{" "}
               <span className="center-link">
@@ -162,7 +166,6 @@ const WorkExperiences = () => {
             </div>
           </div>
       </div>
-    </div>
 </section>
 );
 };
