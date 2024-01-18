@@ -56,7 +56,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin: 2em
+    margin: 2em;
+    margin-left: 5em;
 }
 
 .experienceSection{
@@ -170,3 +171,9 @@ a{
   display: inline;
 }
 
+.body-content p, .body-contentSub p{
+  height: auto;
+  width: 40vw;
+  text-align: justify;
+  /* hyphens: auto; */
+}
