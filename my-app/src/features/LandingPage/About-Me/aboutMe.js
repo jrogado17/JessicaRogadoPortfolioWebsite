@@ -6,13 +6,13 @@ import SchoolSkills from '../Skills/Schoolskills';
 const AboutMe = () => {
   return (
     <div className='aboutmeContainer'>
+       <h2 className='PageTitle' id='Introduction'>
+            About Me
+          </h2>
       <div className='aboutmeHeader'></div>
       <div className='about-me'>
         <div className='pictureofMe'></div>
         <div className='about-me-text'>
-          <h2 className='PageTitle' id='Introduction'>
-            About Me
-          </h2>
             <p className='interests'>
             I love to surf
             <img

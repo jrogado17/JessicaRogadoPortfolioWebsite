@@ -1,17 +1,15 @@
-.title{
-  font-family: 'Bogart', sans-serif;
-    font-weight: 700;
-}
-.PageTitle2{
+.PageTitle{
   font-family: 'Bogart', sans-serif;
   font-style: italic;
   font-weight: bold;
   font-weight: 800; 
-  font-size: 5em;
+  font-size: 5em !important;
   margin-bottom: 1em; 
   letter-spacing: 2px;
   text-align: center;
 }
+
+
 #Introduction{
   text-align: center;
 }
@@ -58,6 +56,9 @@
     
 }
 
+.check{
+  color:#FF8096;
+}
 .experienceSection2 > .experienceSection{
   /* padding: 0.5em; */
   padding-bottom: 0; 
@@ -104,14 +105,18 @@
       margin-top:1em;
   }
   .experienceSection2{
-    display: flex;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
     align-self: center;
     margin: 3em;
   }
+  .experienceSection2 > :nth-child(1) {
+    grid-column: span 2; 
+    text-align: center; 
+  }
 .equations{
   text-align: center;
-  /* padding-right:0; */
+  font-size: .8em;
 }
   .body-content a {
     text-decoration: none;
@@ -142,3 +147,17 @@
 .experience3{
   margin:3em;
 }
+a:hover {
+  color: blue;
+}
+a{
+  color:#FF8096;
+}
+.link{
+  text-decoration: none;
+  display: inline;
+}
+.center-link {
+  display: inline;
+}
+
