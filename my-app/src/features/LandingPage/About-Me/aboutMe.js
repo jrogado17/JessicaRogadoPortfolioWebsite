@@ -2,6 +2,7 @@ import React from 'react';
 import './aboutMe.css';
 import Skills from '../Skills/SWskills';
 import SchoolSkills from '../Skills/Schoolskills';
+import Footer from '../../Footer/footer'
 
 const AboutMe = () => {
   return (
@@ -165,6 +166,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

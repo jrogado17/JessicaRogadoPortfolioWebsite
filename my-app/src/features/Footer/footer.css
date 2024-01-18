@@ -1,46 +1,19 @@
-@font-face {
-  font-family: 'Lucky Bones';
-  src: url('../fonts/Luckybones-Bold.ttf') format('truetype'); 
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
-.content-container {
-  min-height: calc(100vh - 80px); 
-}
-
-.footer {
-  color: black;
-  text-align: center;
-  position: inherit;
-  width:100%;
-  bottom: 0;
-  height: auto;
-}
-
-.get-in-touch h2 {
-  font-family: 'Bogart', sans-serif; 
-  font-size: 2.7em; 
-  margin: 0;
-  margin-top: 1em;
-  color: black;
-}
-
-.get-in-touch p {
+button {
+  transform: rotate(-90deg);
+  color: #6949FF;
+  padding: 15px 20px; 
+  border: none;
+  cursor: pointer;
+  background: transparent; 
+  outline: none;
+  font-size: 5em;
   font-family: 'Bogart', sans-serif;
-  font-weight: 700;
-  font-size: 1.3vw;
-  text-align: center;
-  color: black;
-  max-width: auto;
-  margin: 1em auto 1em auto; 
-}
-
-.get-in-touch a {
-  text-decoration: none;
-  color: #4697f6;
-  font-weight: bolder;
-}
-
-.get-in-touch {
-  margin-top: 5vw;
-  padding-bottom: 10px; 
+  transition: background-color 0.3s ease;
 }

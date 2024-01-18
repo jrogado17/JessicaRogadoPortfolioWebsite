@@ -10,7 +10,6 @@ body {
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
