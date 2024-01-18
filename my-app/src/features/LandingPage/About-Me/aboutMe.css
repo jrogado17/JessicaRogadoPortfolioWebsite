@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Combat';
+  src: url('../../fonts/Combat.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Harmond';
+  src: url('../../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
+}
+
+.PageTitle{
+  font-family: 'Bogart', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 800; 
+  font-size: 5em !important;
+  margin-bottom: .5em; 
+  letter-spacing: 2px;
+    text-align: center;
+}
+#Introduction{
+  text-align: center;
+}
+  .aboutmeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutmeHeader {
+    display: inline-block;
+    margin: 0 auto; 
+    margin-bottom: 15px; 
+  }
+    
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .about-me-text {
+    font-family: 'Bogart', sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+    text-align: left;
+    color: black;
+    max-width: 50em;
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #ME, #SWE{
+    font-family: 'Bogart', sans-serif;
+    font-weight: 700;
+  }
+
+  .img{
+  width: 5vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+.gh-img{
+  width: 15vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.school{
+  width: 85vw;
+}
+
+#school,
+#ME,
+#SWE,
+#skills {
+  margin-right: 10px; 
+  
+}
+
+.title{
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 900; 
+  font-size: 3.75vw;
+  margin-bottom: 0; 
+  letter-spacing: 2px;
+}
+.country-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 46px;
+}
+
+.country-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flag-img{
+  width: 5vw;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}

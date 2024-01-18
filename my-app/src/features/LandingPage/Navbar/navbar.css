@@ -1,0 +1,81 @@
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbarContainer {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+  display: flex;
+  font-weight: bold;
+}
+
+#name {
+  font-family: 'Bogart', sans-serif;
+  font-size: 6em; 
+  color: black; /* Text color */
+  text-decoration: none; /* Remove default underline for links */
+  margin-left: 20px; 
+  font-style: italic;
+}
+
+.navLink{
+  font-family: 'Bogart', sans-serif;
+  font-size: 2.5vw;
+  text-decoration:none;
+  color:Black;
+  font-weight: 500;
+
+}
+
+.navLinksContainer{
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000; 
+  position: relative;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #18272F; /* Adjust the color as needed */
+  position: relative;
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F; /* Adjust the color as needed */
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
