@@ -1,12 +1,3 @@
-nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 999;
-  width: 100%;
-}
-
 .navbarContainer {
   width: 100%;
   height: 100%;
@@ -19,11 +10,15 @@ nav {
   font-weight: bold;
 }
 
+#JR{
+  
+}
+
 #name {
   font-family: 'Bogart', sans-serif;
   font-size: 6em; 
-  color: black; /* Text color */
-  text-decoration: none; /* Remove default underline for links */
+  color: black; 
+  text-decoration: none; 
   margin-left: .5em; 
   font-style: italic;
 }
@@ -57,7 +52,7 @@ nav {
 
 .navLink {
   text-decoration: none;
-  color: #18272F; /* Adjust the color as needed */
+  color: #18272F;
   position: relative;
 }
 
@@ -67,7 +62,7 @@ nav {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: #18272F; /* Adjust the color as needed */
+  background-color: #18272F; 
   bottom: 0;
   left: 0;
   transform-origin: right;

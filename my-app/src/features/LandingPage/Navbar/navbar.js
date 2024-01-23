@@ -1,13 +1,14 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import './navbar.css';
+import name from '../../images/name.png'
 
 const Navbar = () => {
   return (
     <nav id='NavBar' role="banner">
       <div className='navbarContainer'>
         <Link to="/" id='name'>
-          JR
+        <img src={name} id='JR' alt="Logo" />
         </Link>
         <div className="navLinksContainer">
           <Link to="/about" className="navLink">
@@ -16,12 +17,6 @@ const Navbar = () => {
           <Link to="/experience" className="navLink">
             Experience
           </Link>
-          {/* <Link to="/projects" className="navLink">
-            Projects
-          </Link> */}
-          {/* <Link to="/contact" className="navLink"> */}
-            {/* Contact */}
-          {/* </Link> */}
         </div>
       </div>
     </nav>
