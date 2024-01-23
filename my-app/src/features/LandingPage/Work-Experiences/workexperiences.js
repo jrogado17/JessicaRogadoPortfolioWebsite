@@ -1,6 +1,7 @@
 import React from 'react';
 import './workexperiences.css';
 import Footer from '../../Footer/footer'
+import Contact from '../Contact/contact'
 
 const WorkExperiences = () => {
   return (
@@ -201,6 +202,7 @@ const WorkExperiences = () => {
           </div>
           </div>
           <Footer />
+          <Contact />
       </div>
 </section>
 );

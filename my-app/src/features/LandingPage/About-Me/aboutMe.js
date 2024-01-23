@@ -3,6 +3,7 @@ import './aboutMe.css';
 import Skills from '../Skills/SWskills';
 import SchoolSkills from '../Skills/Schoolskills';
 import Footer from '../../Footer/footer'
+import Contact from '../Contact/contact'
 
 const AboutMe = () => {
   return (
@@ -167,6 +168,7 @@ const AboutMe = () => {
         </div>
       </div>
       <Footer />
+      < Contact/>
     </div>
   );
 };

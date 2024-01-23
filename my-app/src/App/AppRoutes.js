@@ -4,7 +4,7 @@ import Welcome from '../features/LandingPage/Welcome/welcome'
 import AboutMe from "../features/LandingPage/About-Me/aboutMe"; // Import the AboutMe component
 import Experience from "../features/LandingPage/Work-Experiences/workexperiences"; // Import the Experience component
 // import Projects from "../features/Projects/Projects"; // Import the Projects component
-// // // import Contact from "../features/Contact/Contact"; // Import the Contact component
+// import Contact from "../features/LandingPage/Contact/contact"; // Import the Contact component
 
 const AppRoutes = () => {
   return (
