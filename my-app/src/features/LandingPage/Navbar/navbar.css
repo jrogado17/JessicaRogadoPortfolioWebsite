@@ -5,13 +5,14 @@
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vw;
+  margin-top: 1vw;
   display: flex;
   font-weight: bold;
+  align-items: normal;
 }
 
 #JR{
-  
+  width:2em;
 }
 
 #name {
