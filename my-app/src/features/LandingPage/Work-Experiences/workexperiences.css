@@ -61,7 +61,6 @@
 }
 
 .experienceSection{
-    /* padding: 2em; */
     margin-left:2.5em;
     padding-bottom: 0; 
     padding-top:0;
@@ -72,10 +71,8 @@
   color:#FF8096;
 }
 .experienceSection2 > .experienceSection{
-  /* padding: 0.5em; */
   padding-bottom: 0; 
   padding-top:0;
-  /* margin-left: 2.5em; */
 }
 .experienceSection3 > .experienceSection{
   padding: .5em;
@@ -175,5 +172,4 @@ a{
   height: auto;
   width: 40vw;
   text-align: justify;
-  /* hyphens: auto; */
 }

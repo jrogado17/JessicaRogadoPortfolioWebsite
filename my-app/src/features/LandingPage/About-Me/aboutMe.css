@@ -15,9 +15,6 @@
   font-size: 5em !important;
   margin-bottom: .5em; 
   letter-spacing: 2px;
-    text-align: center;
-}
-#Introduction{
   text-align: center;
 }
   .aboutmeContainer{
@@ -33,25 +30,40 @@
     
   .about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
-  .about-me-text, .introduction-text {
+
+  .schoolContainer{
+    display: flex;
+  }
+  .about-me-text, .introduction-text, .school-text, #school {
     font-family: 'Bogart', sans-serif;
     font-weight: 600;
-    font-size: 2.2em;
-    text-align: left;
+    font-size: 2em;
     color: black;
-    max-width: 50em;
-    text-align: left;
     line-height: 1.5em;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-  #rivian-car {
-    height: 2.2em; 
+    text-align: center;
+    margin: 0 auto;
+    text-align: justify;
   }
 
+  .introduction-text{
+    width: 60vw;
+  }
+  #rivian-car {
+    height: 1.5em; 
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+.introduction-section {
+  display: flex;
+  width: 100vw;
+  margin: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
   #ME, #SWE{
     font-family: 'Bogart', sans-serif;
     font-weight: 700;
@@ -76,7 +88,9 @@
 }
 
 .school{
+  display:flex;
   width: 85vw;
+  text-align: justify;
 }
 
 #school,
@@ -88,13 +102,12 @@
 }
 
 .title{
-  font-style: italic;
+  font-family: 'Bogart', sans-serif;
   font-weight: bold;
-  font-weight: 900; 
-  font-size: 3.75vw;
-  margin-bottom: 0; 
-  letter-spacing: 2px;
+  font-size: 2.5em;
+  text-align: center;
 }
+
 .country-list {
   list-style: none;
   padding: 0;
