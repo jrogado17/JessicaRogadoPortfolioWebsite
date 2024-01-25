@@ -36,7 +36,7 @@
     flex-direction: row;
     align-items: center;
   }
-  .about-me-text {
+  .about-me-text, .introduction-text {
     font-family: 'Bogart', sans-serif;
     font-weight: 600;
     font-size: 2.2em;
@@ -47,6 +47,9 @@
     line-height: 1.5em;
     margin-left: 2em;
     margin-right: 2em;
+  }
+  #rivian-car {
+    height: 2.2em; 
   }
 
   #ME, #SWE{

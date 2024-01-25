@@ -11,6 +11,13 @@ const AboutMe = () => {
        <h2 className='PageTitle' id='Introduction'>
             About Me
           </h2>
+          <div className='introduction-section'>
+        <p className='introduction-text'>
+          Hey there! 👋 I'm Jessica Rogado, a 💡 versatile engineer with a background in Mechanical Engineering and Physics empowers me to tackle complex challenges, turning them into innovative solutions. 🚀 After my journey at Rivian 
+          <img src='https://static.thenounproject.com/png/5383586-200.png' alt='Rivian Car' />, 
+          I seamlessly integrated into the world of software, seizing the opportunity to earn a certification in software development. 💻✨
+        </p>
+      </div>
       <div className='aboutmeHeader'></div>
       <div className='about-me'>
         <div className='pictureofMe'></div>
