@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <div className='aboutmeContainer'>
       <h2 className='PageTitle' id='Introduction'>
-        About Me
+      About Me 
       </h2>
 
       <div className='introduction-section'>
