@@ -2,12 +2,13 @@
   font-family: 'Combat';
   src: url('../../fonts/Combat.ttf') format('truetype'); 
 }
+
 @font-face {
   font-family: 'Harmond';
   src: url('../../fonts/Harmond-ExtraBoldExpanded.ttf') format('truetype'); 
 }
 
-.PageTitle{
+.PageTitle {
   font-family: 'Bogart', sans-serif;
   font-style: italic;
   font-weight: bold;
@@ -17,68 +18,56 @@
   letter-spacing: 2px;
   text-align: center;
 }
-  .aboutmeContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .aboutmeHeader {
-    display: inline-block;
-    margin: 0 auto; 
-    margin-bottom: 15px; 
-  }
-    
-  .interestsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .schoolContainer{
-    display: flex;
-  }
-  .interests-text, .introduction-text, .school-text, #school {
-    font-family: 'Bogart', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
-    color: black;
-    line-height: 1.5em;
-    text-align: center;
-    margin: 0 auto;
-    text-align: justify;
-  }
-
-  .introduction-text{
-    width: 60vw;
-  }
-  #rivian-car {
-    height: 1.5em; 
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-.introduction-section {
+.aboutmeContainer {
   display: flex;
-  width: 100vw;
-  margin-right: 1em;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-  #ME, #SWE{
-    font-family: 'Bogart', sans-serif;
-    font-weight: 700;
-  }
 
-  .img{
-  width: 5vw;
+.aboutmeHeader {
+  display: inline-block;
+  margin: 0 auto; 
+  margin-bottom: 15px; 
+}
+
+.interestsContainer, .introduction-section, .school-section, .skills-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin: 3em;
+}
+ #text-spike-aboutme{
+  
+ }
+.introduction-text, .school-text, .interests-text, #skills {
+  font-family: 'Bogart', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.5; 
+  width: 60vw; 
+}
+
+#rivian-car {
+  height: 1.5em; 
+  vertical-align: text-bottom;
+}
+
+.img, .Eimg {
+  width: 3vw; /* Adjust width as needed */
   height: auto;
   margin-bottom: 15px;
   margin-left: 15px;
   display: inline-block;
   vertical-align: middle;
-  }
+}
 
-.gh-img{
+.gh-img {
   width: 15vw;
   height: auto;
   margin-bottom: 15px;
@@ -87,25 +76,24 @@
   vertical-align: middle;
 }
 
-.school{
-  display:flex;
+.school {
+  display: flex;
   width: 85vw;
   text-align: justify;
 }
 
-#school,
-#ME,
-#SWE,
-#skills {
+#school, #ME, #SWE, #skills {
   margin-right: 10px; 
-  
 }
 
-.title{
+.title {
   font-family: 'Bogart', sans-serif;
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
+  margin: 2em;
+  width: 16vw;
+  font-style: italic;
 }
 
 .country-list {
@@ -123,7 +111,7 @@
   text-align: center;
 }
 
-.flag-img{
+.flag-img {
   width: 5vw;
   height: auto;
   margin-bottom: 15px;
