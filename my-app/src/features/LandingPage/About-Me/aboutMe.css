@@ -38,8 +38,11 @@
   justify-content: center; 
   margin: 3em;
 }
- #text-spike-aboutme{
-  
+ #text-spikeAM{
+    color: #4697f6;
+    cursor: pointer;
+    font-size: 2em;
+    margin:0;
  }
 .introduction-text, .school-text, .interests-text, #skills {
   font-family: 'Bogart', sans-serif;

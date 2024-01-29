@@ -4,7 +4,7 @@ import Skills from '../Skills/SWskills';
 import SchoolSkills from '../Skills/Schoolskills';
 import Footer from '../../Footer/footer';
 import Contact from '../Contact/contact';
-
+import '../Welcome/welcome.css'
 const AboutMe = () => {
   return (
     <div className='aboutmeContainer'>
@@ -14,14 +14,14 @@ const AboutMe = () => {
 
       <div className='introduction-section'>
         <h2 className='title' id='Introduction'>
-          Introduction
+        Introduction 
         </h2>
         <p className='introduction-text'>
           Hey there! 👋 I'm Jessica Rogado, a 💡 versatile engineer with a background in Mechanical Engineering and Physics that empowers me to tackle complex challenges, turning them into innovative solutions. 🚀 After my journey at Rivian{' '}
           <img src='https://static.thenounproject.com/png/5383586-200.png' id='rivian-car' alt='Rivian Car' />, I seamlessly integrated into the world of software, seizing the opportunity to earn a certification in software development. 💻✨
         </p>
       </div>
-      <p id='text-spike-aboutme'>✹</p>
+      {/* <p id='text-spikeAM'>✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹</p> */}
       <div className='school-section'>
         <h2 className='title' id='Introduction'>
           School
@@ -84,9 +84,7 @@ const AboutMe = () => {
           Skills
         </h2>
         <p id='skills'>
-          where I learned ...
-          {/* <Skills /> */}
-          I also know ...
+          <Skills />
           <SchoolSkills/>
         </p>
       </div>
