@@ -2,10 +2,10 @@ import React from 'react';
 import SkillCard from './skillcard';
 import './skillcard.css';
 
-import mathematicaImage from '../../images/mathematica.png';
-import matlabImage from '../../images/matlab.png';
-import simulinkImage from '../../images/simulink.png';
-import solidworksImage from '../../images/solidworks.png';
+import mathematicaImage from '../../../images/mathematica.png';
+import matlabImage from '../../../images/matlab.png';
+import simulinkImage from '../../../images/simulink.png';
+import solidworksImage from '../../../images/solidworks.png';
 
 const SchoolSkills = () => {
   const skillCards = [

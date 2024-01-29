@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import SkillCard from './skillcard';
-import jsImage from '../../images/js.png';
-import htmlImage from '../../images/HTML.png';
-import cssImage from '../../images/css.png';
-import expressjsImage from '../../images/express-js.png';
-import nodejsImage from '../../images/nodeJS.png';
-import reactImage from '../../images/react.png';
-import reduxImage from '../../images/redux.png';
-import gitImage from '../../images/git.png';
+import jsImage from '../../../images/js.png';
+import htmlImage from '../../../images/HTML.png';
+import cssImage from '../../../images/css.png';
+import expressjsImage from '../../../images/express-js.png';
+import nodejsImage from '../../../images/nodeJS.png';
+import reactImage from '../../../images/react.png';
+import reduxImage from '../../../images/redux.png';
+import gitImage from '../../../images/git.png';
 import './skillcard.css';
 
 const SWSkills = () => {
