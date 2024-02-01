@@ -119,7 +119,16 @@
 .flag-img {
   width: 5vw;
   height: auto;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.interests-img{
+  width: 4vw;
+  height: auto;
+  /* margin-bottom: 15px; */
   margin-left: 15px;
   display: inline-block;
   vertical-align: middle;
