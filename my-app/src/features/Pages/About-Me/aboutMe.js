@@ -1,10 +1,13 @@
+// AboutMe.js
 import React from 'react';
 import './aboutMe.css';
+import countries from './countries'; //
 import Skills from './Skills/SWskills';
 import SchoolSkills from './Skills/Schoolskills';
 import Footer from '../../Footer/ScrollToTop/ScrollToTop';
 import Contact from '../../Footer/Contact/contact';
-import '../Welcome/welcome.css'
+import '../Welcome/welcome.css';
+
 const AboutMe = () => {
   return (
     <div className='aboutmeContainer'>
@@ -21,7 +24,7 @@ const AboutMe = () => {
           <img src='https://static.thenounproject.com/png/5383586-200.png' id='rivian-car' alt='Rivian Car' />, I seamlessly integrated into the world of software, seizing the opportunity to earn a certification in software development. 💻✨
         </p>
       </div>
-      {/* <p id='text-spikeAM'>✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹✹</p> */}
+
       <div className='school-section'>
         <h2 className='title' id='Introduction'>
           School
@@ -79,15 +82,17 @@ const AboutMe = () => {
             </span>
         </p>
       </div>
+
       <div className='skills-section'>
         <h2 className='title' id='Introduction'>
           Skills
         </h2>
         <p id='skills'>
-          <Skills />
-          <SchoolSkills/>
+          {/* <Skills /> */}
+          {/* <SchoolSkills/> */}
         </p>
       </div>
+
       <div className='interestsContainer'>
         <div className='interests-text'>
         <h2 className='title' id='Introduction'>
@@ -116,75 +121,20 @@ const AboutMe = () => {
             Where I've been...
           </p>
           <ul className='country-list'>
-          <ul className='country-list'>
-            <li>
-              <span>Netherlands</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/323/323275.png'
-                className='flag-img'
-                alt='Netherlands Flag'
-              />
-            </li>
-            <li>
-              <span>Denmark</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/197/197565.png'
-                className='flag-img'
-                alt='Denmark Flag'
-              />
-            </li>
-            <li>
-              <span>Italy</span>
-              <img
-                src='https://cdn1.iconfinder.com/data/icons/flags-of-the-world-2/128/italy-circle-512.png'
-                className='flag-img'
-                alt='Italy Flag'
-              />
-            </li>
-            <li>
-              <span>France</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/197/197560.png'
-                className='flag-img'
-                alt='France Flag'
-              />
-            </li>
-            <li>
-              <span>Scotland</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/197/197601.png'
-                className='flag-img'
-                alt='Scotland Flag'
-              />
-            </li>
-            <li>
-              <span>Norway</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/197/197579.png'
-                className='flag-img'
-                alt='Norway Flag'
-              />
-            </li>
-            <li>
-              <span>Portugal</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/3909/3909361.png'
-                className='flag-img'
-                alt='Portugal Flag'
-              />
-            </li>
-            <li>
-              <span>Philippines</span>
-              <img
-                src='https://cdn-icons-png.flaticon.com/512/197/197561.png'
-                className='flag-img'
-                alt='Philippines Flag'
-              />
-            </li>
-          </ul>
+            {countries.map((country, index) => (
+              <li key={index}>
+                <span>{country.name}</span>
+                <img
+                  src={country.flag}
+                  className='flag-img'
+                  alt={`${country.name} Flag`}
+                />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
+
       <Footer />
       <Contact/>
     </div>
