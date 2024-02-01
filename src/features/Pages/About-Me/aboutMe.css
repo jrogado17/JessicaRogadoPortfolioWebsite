@@ -22,7 +22,7 @@
 .aboutmeContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: unset;
 }
 
 .aboutmeHeader {
@@ -36,7 +36,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center; 
-  margin: 3em;
+  margin: 3em 0;
 }
  #text-spikeAM{
     color: #4697f6;
@@ -103,7 +103,17 @@
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 46px;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.AMtext-star{
+  color: #E97451;
+  cursor: cursor;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .country-list li {
@@ -111,12 +121,22 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
+  margin-bottom: 46px; 
 }
 
 .flag-img {
   width: 5vw;
   height: auto;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.interests-img{
+  width: 4vw;
+  height: auto;
+  /* margin-bottom: 15px; */
   margin-left: 15px;
   display: inline-block;
   vertical-align: middle;

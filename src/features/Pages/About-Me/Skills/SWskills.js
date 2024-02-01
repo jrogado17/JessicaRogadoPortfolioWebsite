@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import SkillCard from './skillcard';
+import SkillCard from './skillcard'; // Assuming SkillCard is correctly implemented
 import jsImage from '../../../images/js.png';
 import htmlImage from '../../../images/HTML.png';
 import cssImage from '../../../images/css.png';
@@ -8,6 +8,10 @@ import nodejsImage from '../../../images/nodeJS.png';
 import reactImage from '../../../images/react.png';
 import reduxImage from '../../../images/redux.png';
 import gitImage from '../../../images/git.png';
+import mathematicaImage from '../../../images/mathematica.png';
+import matlabImage from '../../../images/matlab.png';
+import simulinkImage from '../../../images/simulink.png';
+import solidworksImage from '../../../images/solidworks.png';
 import './skillcard.css';
 
 const SWSkills = () => {
@@ -36,12 +40,22 @@ const SWSkills = () => {
     };
 
     const cloneSkills = () => {
-      const originalCards = Array.from(skillCardsContainerRef.current.children);
-      originalCards.forEach((card) => {
-        const clone = card.cloneNode(true);
-        skillCardsContainerRef.current.appendChild(clone);
-      });
+      const container = skillCardsContainerRef.current;
+      const containerWidth = container.offsetWidth;
+    
+      let totalWidth = 0;
+      const originalCards = Array.from(container.children);
+      while (totalWidth < containerWidth) {
+        originalCards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          container.appendChild(clone);
+          totalWidth += card.offsetWidth;
+        });
+      }
+      container.style.transition = 'none';
+      container.style.transform = 'translateX(0)';
     };
+    
 
     slideSkills();
     cloneSkills();
@@ -63,6 +77,10 @@ const SWSkills = () => {
     { imageSrc: reactImage, text: 'React' },
     { imageSrc: reduxImage, text: 'Redux' },
     { imageSrc: gitImage, text: 'Git' },
+    { imageSrc: mathematicaImage, text: 'Mathematica' },
+    { imageSrc: matlabImage, text: 'Matlab' },
+    { imageSrc: simulinkImage, text: 'Simulink' },
+    { imageSrc: solidworksImage, text: 'SolidWorks' },
   ];
 
   return (

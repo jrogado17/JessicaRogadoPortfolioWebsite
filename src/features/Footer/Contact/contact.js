@@ -1,12 +1,16 @@
 import React from 'react';
 import './contact.css';
-
+import resumePDF from '../Contact/JessicaRogadoResume.pdf'
 const Contact = () => {
   return (
     <div className="get-in-touch">
       <h2 className='Contact' id='Introduction'>
         Get In Touch
       </h2>
+      <a href={resumePDF} id='Resume' target="_blank" rel="noopener noreferrer">
+          Resume 
+          <img src ='https://static.thenounproject.com/png/4303392-200.png'></img>
+        </a>
       <div className='icon-container'>
         <a href="https://www.linkedin.com/in/j-rogado/" className='webIcons' target="_blank" rel="noopener noreferrer">
           <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912623/linkedin-icon-md.png" alt="LinkedIn" className="icon" />
