@@ -1,0 +1,272 @@
+/* landingpage.css */
+@import url('https://fonts.cdnfonts.com/css/borsok');
+@import url(https://db.onlinewebfonts.com/c/5adea73b2b16568b5eba321d4c333e89?family=Bogart+Medium);
+
+body {
+
+
+  border: none;
+  margin-top: 6vw;
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00473E;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: #F2F7F5;
+  font-weight: bold;
+  font-family: 'Bogart', sans-serif;
+  font-size: 2em;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #faae2b;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  scroll-snap-align: start;
+}
+#freebodylink{
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #faae2b;
+}
+.project-description a {
+  color: #faae2b; /* Set the link color */
+  text-decoration: none; /* Add an underline to the link */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  margin: 4px; /* Add some space between the links */
+}
+.section h2 {
+  color: #00473E;
+  font-family: 'Bogart', sans-serif;
+  font-size: 5vw;
+
+}
+#FBlinks {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  margin-left:0;
+}
+
+#FBlinks a{
+  color: #f5f5f5;
+  background: #00473E;
+  padding: 20px 20px; 
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bogart', sans-serif;
+  font-weight: bold;
+  border-radius:3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: table;
+  justify-content:center;
+  align-items: left;
+  text-align: center;
+  margin-top: 1em;
+}
+#FBlinks a:hover{
+  background: #faae2b;
+  color: #00473e;
+}
+#links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#blank {
+  height: 30vh;
+}
+
+
+
+.align{
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-evenly;
+}
+
+#about-me p,
+#projects p {
+  color: #475D5B;
+  font-family: Bogart;
+  font-size: 1.75vw;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  width:30vw;
+  flex-shrink: 0;
+  display: inline;
+  margin-top: 6vw;
+}
+
+#projects p {
+  width: 30vw;
+  margin:0;
+}
+
+.project-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 3vw;
+}
+.project-description h3{
+  margin: 1vw;
+  font-size: 3vw;
+  font-weight: 800;
+  color: #475d5b; 
+  font-family: 'Bogart', sans-serif;
+}
+.FBLogo {
+  width:20vw;
+}
+.project-description p {
+  margin-left: 20px;
+}
+
+.divider {
+  display: inline;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+
+.skill-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
+  padding: 4vw;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 940px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+  }
+
+}
+
+.section-divider {
+  height: 85%;
+  width: .5%;
+  background-color: #00332c;
+  margin: 0;
+  margin-left: 110px;
+}
+
+
+.section-heading::first-letter {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the first letter bold if desired */
+  vertical-align: initial;
+}
+/* @media (max-width: 1070px) {
+  .section h2 {
+    font-size: 3;
+  }
+} */
+
+
+
+.underline-divider1 {
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.underline-divider2{
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#about-me p:nth-child(4) {
+  color:#475d5b;
+  margin:2vw;
+  font-weight: 800;
+}
+
+.underline-divider3{
+  margin-bottom: 30vw;
+  position:absolute;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  top: -15vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.GHLogo{
+  width:50vw;
+  transform: translate(0px, -8vw);
+}
