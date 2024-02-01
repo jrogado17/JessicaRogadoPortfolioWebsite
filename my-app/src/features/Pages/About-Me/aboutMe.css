@@ -22,7 +22,7 @@
 .aboutmeContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: unset;
 }
 
 .aboutmeHeader {
@@ -36,7 +36,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center; 
-  margin: 3em;
+  margin: 3em 3em 0;
 }
  #text-spikeAM{
     color: #4697f6;
@@ -92,7 +92,7 @@
 .title, #introduction {
   font-family: 'Bogart', sans-serif;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: center;
   margin: 2em;
   width: 16vw;
@@ -103,7 +103,9 @@
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 46px;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .country-list li {
@@ -111,6 +113,7 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
+  margin-bottom: 46px; 
 }
 
 .flag-img {

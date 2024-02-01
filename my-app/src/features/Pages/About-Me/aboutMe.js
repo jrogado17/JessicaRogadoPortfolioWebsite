@@ -42,7 +42,7 @@ const AboutMe = () => {
             </span>{' '}
             with a{' '}
             <span id='ME'>
-              <br />B.S. in Mechanical Engineering
+              B.S. in Mechanical Engineering
               <img
                 src='https://static.vecteezy.com/system/resources/thumbnails/016/415/298/small/wrench-illustration-in-minimal-style-png.png'
                 loading='lazy'
@@ -60,7 +60,7 @@ const AboutMe = () => {
                 alt='Physics Icon'
               />
             </span>
-            <br />I also completed{' '}
+            I also completed{' '}
             <span>
               Fullstack Academy{' '}
               <img
@@ -94,10 +94,11 @@ const AboutMe = () => {
       </div>
 
       <div className='interestsContainer'>
-        <div className='interests-text'>
-        <h2 className='title' id='Introduction'>
-          Interests
-        </h2>
+        
+          <h2 className='title' id='Introduction'> 
+        Interests
+         </h2>
+    <div className='interests-text'>
           <p className='interests'>
             I love to surf
             <img
