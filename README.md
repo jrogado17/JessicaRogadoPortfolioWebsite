@@ -32,6 +32,5 @@ To run the code locally, follow these steps:
 - LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/j-rogado/)
 - Portfolio Website: TBA
 
-## License
-
-This project is licensed under the [choose a license] License - see the [LICENSE.md](LICENSE.md) file for details.
+=======
+# Tech-PortfolioWebsite
