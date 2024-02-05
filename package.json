@@ -14,12 +14,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --output-path=build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
-  },
+  }
+  ,
   "eslintConfig": {
     "extends": [
       "react-app",
