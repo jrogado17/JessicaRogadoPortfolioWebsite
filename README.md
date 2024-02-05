@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Technical Portfolio
 
 Welcome to my technical portfolio! This repository showcases my projects, skills, and experience.
