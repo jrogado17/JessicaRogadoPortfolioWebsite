@@ -1,30 +1,34 @@
-# Portfolio Page README
+<<<<<<< HEAD
+# Technical Portfolio
 
-Welcome to my portfolio page! Thank you for taking the time to visit. Here's how you can get started with the project:
+Welcome to my technical portfolio! This repository showcases my projects, skills, and experience.
 
-## Clone Repository
-Begin by cloning the repository to your local machine:
+## To Run Code
 
-```bash
-git clone [repository-url]
+To run the code locally, follow these steps:
 
-Install Dependencies
-After cloning the repository, navigate into the project directory and install the necessary dependencies:
+1. Clone the repository:
+    ```
+    git clone git@github.com:jrogado17/Tech-PortfolioWebsite.git
+    ```
 
-bash
-Copy code
-cd [repository-directory]
-npm install
-Run the Application
-Once the dependencies are installed, navigate into the my-app directory and start the application:
+2. Navigate to the project directory:
+    ```
+    cd Tech-PortfolioWebsite/my-app
+    ```
 
-bash
-Copy code
-cd my-app
-npm run start
-Explore and Enjoy
-Open your web browser and go to the localhost address where the application is running. Explore the portfolio page, and if you have any feedback or suggestions, feel free to share them!
+3. Install dependencies:
+    ```
+    npm install
+    ```
 
-Thank you for visiting my portfolio page. Enjoy exploring!
+4. Start the development server:
+    ```
+    npm start
+    ```
 
-vbnet
+## Contact
+
+- Email: jrogado23@yahoo.com
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/j-rogado/)
+- Portfolio Website: TBA
