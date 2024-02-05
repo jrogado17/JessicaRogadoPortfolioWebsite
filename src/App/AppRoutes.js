@@ -10,7 +10,7 @@ const AppRoutes = () => {
   return (
     <div className="appRoutesContainer">
       <Routes>
-        <Route path="/JessicaRogadoPortfolioWebsite" element={<Welcome />} />
+        <Route path="/" element={<Welcome />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/experience" element={<Experience />} />
         {/* <Route path="/projects" element={<Projects />} /> */}
