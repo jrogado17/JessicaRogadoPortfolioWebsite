@@ -7,7 +7,7 @@ import Experience from "../features/Pages/Work-Experiences/workexperiences";
 const AppRoutes = () => {
   return (
     <div className="appRoutesContainer">
-      <BrowserRouter>
+      <BrowserRouter basename="/JessicaRogadoPortfolioWebsite">
         <Route path="/" exact component={Welcome} />
         <Route path="/about" component={AboutMe} />
         <Route path="/experience" component={Experience} />
