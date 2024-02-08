@@ -8,12 +8,18 @@
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
       "src": "logo192.png",
+=======
+>>>>>>> 55b7118 (adding images and pages, footer, navbar)
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+<<<<<<< HEAD
       "src": "logo512.png",
+=======
+>>>>>>> 55b7118 (adding images and pages, footer, navbar)
       "type": "image/png",
       "sizes": "512x512"
     }

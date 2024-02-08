@@ -16,4 +16,8 @@ const AppRoutes = () => {
   );
 };
 
+const WelcomeComponent = () => <Welcome />;
+const AboutMeComponent = () => <AboutMe />;
+const ExperienceComponent = () => <Experience />;
+
 export default AppRoutes;
